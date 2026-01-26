@@ -49,9 +49,6 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
                 <Button onClick={onStart} size="lg" className="w-full font-bold text-lg">
                     INICIAR TESTE
                 </Button>
-                <p className="text-center text-sm text-muted-foreground">
-                    +10.482 pessoas já testaram
-                </p>
             </div>
           </div>
           <div className="relative hidden h-full min-h-[300px] md:block">
