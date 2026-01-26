@@ -20,20 +20,22 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
   useEffect(() => {
     setIsMounted(true);
     // A/B Test for headline
-    const randomHeadline = quizData.headlines[Math.floor(Math.random() * quizData.headlines.length)];
-    setHeadline(randomHeadline);
+    if (typeof window !== 'undefined') {
+        const randomHeadline = quizData.headlines[Math.floor(Math.random() * quizData.headlines.length)];
+        setHeadline(randomHeadline);
+    }
   }, []);
 
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-image');
   
   const renderHeadline = (text: string) => {
-    const parts = text.split(/(MÉTODO MILITAR|2 MINUTOS|2 Minutos)/i);
+    const parts = text.split(/(MÉTODO MILITAR|2 MINUTOS)/i);
     return (
       <>
         {parts.map((part, index) => {
           if (!part) return null;
-          if (part.match(/^(MÉTODO MILITAR|2 MINUTOS|2 Minutos)$/i)) {
-            return <span key={index} className="text-warning">{part}</span>;
+          if (part.match(/^(MÉTODO MILITAR|2 MINUTOS)$/i)) {
+            return <span key={index} className="text-yellow-400">{part}</span>;
           }
           return part;
         })}
@@ -46,8 +48,8 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
       <Card className="overflow-hidden border-0 bg-transparent shadow-none md:border md:bg-card md:shadow-lg">
         <div className="grid items-center md:grid-cols-2">
           <div className="space-y-6 p-6 md:p-8">
-            <h1 className="font-headline text-2xl font-bold text-white md:text-4xl">
-              {renderHeadline(headline)}
+            <h1 className="text-2xl font-bold text-white md:text-4xl">
+              {isMounted ? renderHeadline(headline) : renderHeadline(quizData.headlines[0])}
             </h1>
             <p className="text-lg text-muted-foreground">
               Teste rápido: em 60s vamos diagnosticar o que impede seu descanso e mostrar um plano prático.
