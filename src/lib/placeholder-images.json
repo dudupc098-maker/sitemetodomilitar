@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A person sleeping peacefully in a dark, calm room.",
+      "imageUrl": "https://images.unsplash.com/photo-1691076198378-124d0985c851?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZWFjZWZ1bCUyMHNsZWVwfGVufDB8fHx8MTc2OTQ1ODI3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "peaceful sleep"
+    },
+    {
+      "id": "authority-1",
+      "description": "Newspaper article headline about sleep science.",
+      "imageUrl": "https://images.unsplash.com/photo-1667255878336-fb79cdaa9fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxuZXdzcGFwZXIlMjBhcnRpY2xlfGVufDB8fHx8MTc2OTQ1ODI3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "newspaper article"
+    },
+    {
+      "id": "authority-2",
+      "description": "Magazine cover with a feature on military techniques.",
+      "imageUrl": "https://images.unsplash.com/photo-1542871793-fd7e2b3cd0b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFnYXppbmUlMjBjb3ZlcnxlbnwwfHx8fDE3Njk0NTgyODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "magazine cover"
+    },
+    {
+      "id": "authority-3",
+      "description": "Online news portal showing a story about sleep.",
+      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxuZXdzJTIwd2Vic2l0ZXxlbnwwfHx8fDE3Njk0Mzg5MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "news website"
+    },
+    {
+      "id": "authority-4",
+      "description": "Scientific journal page about sleep studies.",
+      "imageUrl": "https://images.unsplash.com/photo-1618393677291-7f57efc1e1cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzY2llbnRpZmljJTIwam91cm5hbHxlbnwwfHx8fDE3Njk0NTgyNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scientific journal"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a smiling person.",
+      "imageUrl": "https://images.unsplash.com/photo-1607529378676-a20456ee2f6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzbWlsaW5nJTIwcGVyc29ufGVufDB8fHx8MTc2OTM3NTM4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling person"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of a happy person.",
+      "imageUrl": "https://images.unsplash.com/photo-1579047917338-a6a69144fe63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMHBlcnNvbnxlbnwwfHx8fDE3Njk0MDc1ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy person"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Portrait of a content person.",
+      "imageUrl": "https://images.unsplash.com/photo-1708384761254-32964bd16c49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb250ZW50JTIwcGVyc29ufGVufDB8fHx8MTc2OTM4NzQ1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "content person"
+    },
+    {
+      "id": "question-image-default",
+      "description": "Abstract image representing thought and mind.",
+      "imageUrl": "https://images.unsplash.com/photo-1700836607024-598bbff80b55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMHRob3VnaHR8ZW58MHx8fHwxNzY5NDU4Mjc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract thought"
+    }
+  ]
 }
