@@ -25,6 +25,21 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
   }, []);
 
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-image');
+  
+  const renderHeadline = (text: string) => {
+    const parts = text.split(/(MÉTODO MILITAR|2 MINUTOS|2 Minutos)/i);
+    return (
+      <>
+        {parts.map((part, index) => {
+          if (!part) return null;
+          if (part.match(/^(MÉTODO MILITAR|2 MINUTOS|2 Minutos)$/i)) {
+            return <span key={index} className="text-warning">{part}</span>;
+          }
+          return part;
+        })}
+      </>
+    );
+  };
 
   return (
     <div className="w-full max-w-4xl animate-fade-in-up">
@@ -32,7 +47,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
         <div className="grid items-center md:grid-cols-2">
           <div className="space-y-6 p-6 md:p-8">
             <h1 className="font-headline text-2xl font-bold text-white md:text-4xl">
-              {headline}
+              {renderHeadline(headline)}
             </h1>
             <p className="text-lg text-muted-foreground">
               Teste rápido: em 60s vamos diagnosticar o que impede seu descanso e mostrar um plano prático.
