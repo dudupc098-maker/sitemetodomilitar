@@ -35,7 +35,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
               {renderHeadline(headline)}
             </h1>
             <p className="text-lg text-muted-foreground">
-              Teste rápido (60s): descubra o que está sabotando seu sono e receba um plano simples para dormir mais rápido ainda hoje.
+              Teste rápido (60s): descubra o que está sabotando seu sono e receba um diagnóstico personalizado ainda hoje.
             </p>
             <ul className="space-y-3">
               {quizData.benefits.map((benefit, index) => (
