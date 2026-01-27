@@ -1,4 +1,4 @@
-import { CheckCircle, Zap, Clock, Star, Award, Shield } from 'lucide-react';
+import { CheckCircle, Zap, Moon, Rocket, Award, Shield } from 'lucide-react';
 
 export const quizData = {
   totalQuestions: 6,
@@ -7,9 +7,9 @@ export const quizData = {
     '🚨 Cansado de Rolar na Cama? Descubra o MÉTODO MILITAR Que Apaga Sua Mente em 2 Minutos!',
   ],
   benefits: [
-    { icon: Zap, text: 'Durma rápido e sem esforço' },
-    { icon: Clock, text: 'Recupere horas de sono profundo' },
-    { icon: Star, text: 'Acorde com energia e clareza mental' },
+    { icon: Zap, text: 'Adormeça mesmo com a mente acelerada' },
+    { icon: Moon, text: 'Pare de acordar cansado, mesmo dormindo “horas”' },
+    { icon: Rocket, text: 'Acorde sem peso no corpo e sem neblina mental' },
   ],
   questions: [
     {
