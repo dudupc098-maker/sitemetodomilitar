@@ -34,7 +34,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
       <Card className="overflow-hidden border-0 bg-transparent shadow-none md:border md:bg-card md:shadow-lg">
         <div className="grid items-center md:grid-cols-2">
           <div className="space-y-6 p-6 md:p-8">
-            <h1 className="font-headline text-2xl font-bold text-white md:text-4xl">
+            <h1 className="text-2xl font-bold text-white md:text-4xl">
               {renderHeadline(headline)}
             </h1>
             <p className="text-lg text-muted-foreground">
