@@ -50,7 +50,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
             </ul>
             <div className="space-y-2">
                 <Button onClick={onStart} size="lg" className="w-full font-bold text-lg">
-                    INICIAR TESTE
+                    INICIAR TESTE AGORA!
                 </Button>
             </div>
           </div>
