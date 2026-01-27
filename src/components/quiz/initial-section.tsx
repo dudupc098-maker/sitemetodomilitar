@@ -1,9 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { quizData } from '@/lib/quiz-data';
 
 type InitialSectionProps = {
@@ -12,7 +10,6 @@ type InitialSectionProps = {
 
 export default function InitialSection({ onStart }: InitialSectionProps) {
   const headline = quizData.headlines[0];
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-image');
   
   const renderHeadline = (text: string) => {
     const parts = text.split(/(MÉTODO MILITAR|2 MINUTOS)/i);
@@ -32,7 +29,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
   return (
     <div className="w-full max-w-4xl animate-fade-in-up">
       <Card className="overflow-hidden border-0 bg-transparent shadow-none md:border md:bg-card md:shadow-lg">
-        <div className="grid items-center md:grid-cols-2">
+        <div className="grid items-center">
           <div className="space-y-6 p-6 md:p-8">
             <h1 className="text-2xl font-bold text-white md:text-4xl">
               {renderHeadline(headline)}
@@ -51,17 +48,6 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
             <Button onClick={onStart} size="lg" className="w-full font-bold text-lg">
                 INICIAR TESTE AGORA!
             </Button>
-          </div>
-          <div className="relative hidden h-full min-h-[300px] md:block">
-            {heroImage && (
-                <Image
-                    src={heroImage.imageUrl}
-                    alt={heroImage.description}
-                    fill
-                    className="object-cover"
-                    data-ai-hint={heroImage.imageHint}
-                />
-            )}
           </div>
         </div>
       </Card>
