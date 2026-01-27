@@ -15,12 +15,17 @@ export default function QuizFlow() {
     window.scrollTo(0, 0);
   };
 
+  const handleBackFromSales = () => {
+    setQuizFinished(false);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="w-full">
       {!quizFinished ? (
         <QuizSteps onFinish={handleQuizFinish} />
       ) : (
-        plan && <SalesPage plan={plan} />
+        plan && <SalesPage plan={plan} onBack={handleBackFromSales} />
       )}
     </div>
   );
