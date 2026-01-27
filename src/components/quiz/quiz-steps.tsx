@@ -10,6 +10,8 @@ import QuestionSection from './question-section';
 import AuthoritySection from './authority-section';
 import LoadingSection from './loading-section';
 import ProgressBar from './progress-bar';
+import { ArrowLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 type QuizStepsProps = {
   onFinish: (plan: PersonalizedSleepPlanOutput) => void;
@@ -27,6 +29,12 @@ export default function QuizSteps({ onFinish }: QuizStepsProps) {
   const handleStart = () => {
     trackEvent('start_quiz');
     setStep(1);
+  };
+
+  const handleBack = () => {
+    if (step > 0) {
+      setStep(step - 1);
+    }
   };
 
   const handleAnswer = async (questionId: string, answerValue: string) => {
@@ -104,6 +112,16 @@ export default function QuizSteps({ onFinish }: QuizStepsProps) {
   return (
     <div className="flex min-h-screen w-full flex-col">
       <ProgressBar progress={getProgress()} />
+      {step > 0 && (
+        <Button
+          variant="ghost"
+          onClick={handleBack}
+          className="absolute top-14 left-4 z-10 text-muted-foreground hover:text-foreground"
+        >
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Voltar
+        </Button>
+      )}
       <div className="flex flex-1 items-center justify-center p-4">
         {renderStep()}
       </div>
