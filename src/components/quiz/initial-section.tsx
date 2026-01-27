@@ -48,11 +48,9 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
                 </li>
               ))}
             </ul>
-            <div className="space-y-2">
-                <Button onClick={onStart} size="lg" className="w-full font-bold text-lg">
-                    INICIAR TESTE AGORA!
-                </Button>
-            </div>
+            <Button onClick={onStart} size="lg" className="w-full font-bold text-lg">
+                INICIAR TESTE AGORA!
+            </Button>
           </div>
           <div className="relative hidden h-full min-h-[300px] md:block">
             {heroImage && (
