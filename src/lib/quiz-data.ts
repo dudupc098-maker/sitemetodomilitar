@@ -43,12 +43,12 @@ export const quizData = {
     },
     {
       id: 'q4',
-      question: 'Quanto tempo, em média, você leva para adormecer depois de deitar?',
+      question: 'Quando você promete a si mesmo que vai “melhorar sua rotina de sono”… o que realmente acontece?',
       options: [
-        { text: '🏆 Menos de 15 minutos', value: 'A' },
-        { text: '🗓️ Entre 15 e 30 minutos', value: 'B' },
-        { text: '😔 Entre 30 minutos e 1 hora', value: 'C' },
-        { text: '😖 Mais de 1 hora, uma verdadeira luta', value: 'D' },
+        { text: '🏆 Sigo o plano por 1-2 dias e depois volto aos velhos hábitos.', value: 'A' },
+        { text: '🗓️ Fico motivado(a) por um tempo, mas a vida atrapalha.', value: 'B' },
+        { text: '😔 Já tentei tantas vezes que nem acredito mais que posso mudar.', value: 'C' },
+        { text: '😖 Não sei por onde começar, então acabo não fazendo nada.', value: 'D' },
       ],
     },
     {
