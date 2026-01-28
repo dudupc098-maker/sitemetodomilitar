@@ -15,11 +15,11 @@ const PersonalizedSleepPlanInputSchema = z.object({
   q1: z
     .string()
     .describe("Response to the question: \"Quando alguém olha para você de manhã, que imagem você acha que transmite?\""),
-  q2: z.string().describe('Response to question 2'),
-  q3: z.string().describe('Response to question 3'),
-  q4: z.string().describe('Response to question 4'),
-  q5: z.string().describe('Response to question 5'),
-  q6: z.string().describe('Response to question 6'),
+  q2: z.string().describe("Response to the question: \"Com que frequência você sente que seu cansaço está fazendo você “ficar pra trás” dos outros?\""),
+  q3: z.string().describe("Response to the question: \"Quando foi a última vez que você acordou e percebeu que, mesmo dormindo, continuava exausto(a)?\""),
+  q4: z.string().describe("Response to the question: \"Quando você promete a si mesmo que vai “melhorar sua rotina de sono”… o que realmente acontece?\""),
+  q5: z.string().describe("Response to the question: \"Se existisse um método rápido e comprovado capaz de fazer você dormir em poucos minutos todas as noites, você gostaria de ter acesso a ele ainda hoje?\""),
+  q6: z.string().describe("Response to the question: \"Você estaria disposto a acordar com energia, sem parecer destruído todas as manhãs, igual a maioria das pessoas que já aplicam este método?\""),
 });
 export type PersonalizedSleepPlanInput = z.infer<
   typeof PersonalizedSleepPlanInputSchema
