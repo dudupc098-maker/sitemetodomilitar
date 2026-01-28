@@ -76,6 +76,21 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
       );
     }
 
+    if (question.id === 'q5') {
+      const parts = text.split(/(método rápido e comprovado)/i);
+      return (
+        <>
+          {parts.map((part, index) => {
+            if (!part) return null;
+            if (part.match(/^(método rápido e comprovado)$/i)) {
+              return <span key={index} className="text-primary">{part}</span>;
+            }
+            return part;
+          })}
+        </>
+      );
+    }
+
     return text;
   };
 
