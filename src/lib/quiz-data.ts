@@ -25,10 +25,10 @@ export const quizData = {
       id: 'q2',
       question: 'Com que frequência você sente que seu cansaço está fazendo você “ficar pra trás” dos outros?',
       options: [
-        { text: '💪 Nunca, me sinto produtivo e no controle', value: 'A' },
-        { text: '⏱️ Às vezes, em dias mais cansativos', value: 'B' },
-        { text: '😥 Frequentemente, sinto que não estou no meu melhor', value: 'C' },
-        { text: '💔 Constantemente, sinto que o cansaço está me limitando', value: 'D' },
+        { text: 'Nunca, me sinto produtivo e no controle', value: 'A' },
+        { text: 'Às vezes, em dias mais cansativos', value: 'B' },
+        { text: 'Frequentemente, sinto que não estou no meu melhor', value: 'C' },
+        { text: 'Constantemente, sinto que o cansaço está me limitando', value: 'D' },
       ],
     },
     {
