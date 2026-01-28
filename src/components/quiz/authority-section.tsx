@@ -1,24 +1,32 @@
 'use client';
 
+import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel';
-import { Card, CardContent } from '@/components/ui/card';
-import { quizData } from '@/lib/quiz-data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import ReportModal from './report-modal';
+import Autoplay from "embla-carousel-autoplay";
+
 
 type AuthoritySectionProps = {
   onContinue: () => void;
 };
 
+const carouselImages = [
+  'https://i.imgur.com/gPmjslE.png',
+  'https://i.imgur.com/NbVS38M.png',
+  'https://i.imgur.com/xNUVJ1g.png',
+  'https://i.imgur.com/ifVygSu.png',
+];
+
 export default function AuthoritySection({ onContinue }: AuthoritySectionProps) {
+    const plugin = React.useRef(
+        Autoplay({ delay: 5000, stopOnInteraction: false })
+    );
+
   return (
     <div className="w-full max-w-4xl animate-fade-in-up space-y-8">
        <div className="text-center">
@@ -30,50 +38,31 @@ export default function AuthoritySection({ onContinue }: AuthoritySectionProps) 
             </p>
        </div>
       <Carousel
+        plugins={[plugin.current]}
         opts={{
           align: 'start',
           loop: true,
         }}
         className="w-full"
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.play}
       >
         <CarouselContent>
-          {quizData.authorityArticles.map((article) => {
-            const image = PlaceHolderImages.find((img) => img.id === article.imageUrlId);
-            return (
-              <CarouselItem key={article.id} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                 <ReportModal
-                    title={article.title}
-                    source={article.source}
-                    image={image}
-                 >
-                    <Card className="cursor-pointer overflow-hidden transition-shadow hover:shadow-primary/20 hover:shadow-lg">
-                        <CardContent className="flex aspect-video flex-col justify-between p-0">
-                        <div className="relative h-3/5 w-full">
-                            {image && (
-                            <Image
-                                src={image.imageUrl}
-                                alt={article.title}
-                                fill
-                                className="object-cover"
-                                data-ai-hint={image.imageHint}
-                            />
-                            )}
-                        </div>
-                        <div className="flex-1 p-4">
-                            <h3 className="font-bold">{article.title}</h3>
-                            <p className="text-sm text-muted-foreground">{article.source}</p>
-                        </div>
-                        </CardContent>
-                    </Card>
-                 </ReportModal>
+          {carouselImages.map((src, index) => (
+            <CarouselItem key={index}>
+              <div className="p-1">
+                <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+                    <Image
+                        src={src}
+                        alt={`Matéria sobre técnica militar ${index + 1}`}
+                        fill
+                        className="object-contain"
+                    />
                 </div>
-              </CarouselItem>
-            );
-          })}
+              </div>
+            </CarouselItem>
+          ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden md:flex" />
-        <CarouselNext className="hidden md:flex" />
       </Carousel>
       <div className="text-center">
         <Button onClick={onContinue} size="lg">CONTINUAR</Button>
