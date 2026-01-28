@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Progress } from '@/components/ui/progress';
 
 type ProgressBarProps = {
@@ -13,10 +14,13 @@ export default function ProgressBarComponent({ progress }: ProgressBarProps) {
     <div className="fixed top-0 left-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto max-w-4xl px-4 py-2">
         <div className="flex h-12 items-center justify-center">
-            {/* Placeholder for Logo */}
-            <div className="flex h-8 w-32 items-center justify-center rounded-md bg-muted/20 text-sm text-muted-foreground">
-                Logo
-            </div>
+            <Image
+                src="https://i.imgur.com/24k01is.png"
+                alt="Logo"
+                width={128}
+                height={32}
+                className="object-contain"
+            />
         </div>
         <div className="flex w-full items-center gap-4">
           <Progress value={progress} className="h-2 w-full" />
