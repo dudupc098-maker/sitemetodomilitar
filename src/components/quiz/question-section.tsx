@@ -46,6 +46,21 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
       );
     }
 
+    if (question.id === 'q3') {
+      const parts = text.split(/(continuava exausto\(a\)\?)/i);
+      return (
+        <>
+          {parts.map((part, index) => {
+            if (!part) return null;
+            if (part.match(/^(continuava exausto\(a\)\?)$/i)) {
+              return <span key={index} className="text-primary">{part}</span>;
+            }
+            return part;
+          })}
+        </>
+      );
+    }
+
     return text;
   };
 
