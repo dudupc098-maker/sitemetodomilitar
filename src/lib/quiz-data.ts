@@ -35,10 +35,10 @@ export const quizData = {
       id: 'q3',
       question: 'O que acontece quando você tenta se concentrar em uma tarefa importante?',
       options: [
-        { text: 'Foco total, sem problemas', value: 'A' },
-        { text: 'Leva um tempo para engrenar', value: 'B' },
-        { text: 'Minha mente vaga e cometo erros bobos', value: 'C' },
-        { text: 'É quase impossível, sinto uma névoa mental', value: 'D' },
+        { text: '😞 Foco total, sem problemas', value: 'A' },
+        { text: '🌙 Leva um tempo para engrenar', value: 'B' },
+        { text: '🤔 Minha mente vaga e cometo erros bobos', value: 'C' },
+        { text: '💔 É quase impossível, sinto uma névoa mental', value: 'D' },
       ],
     },
     {
