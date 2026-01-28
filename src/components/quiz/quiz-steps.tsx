@@ -116,7 +116,7 @@ export default function QuizSteps({ onFinish }: QuizStepsProps) {
         <Button
           variant="ghost"
           onClick={handleBack}
-          className="absolute top-14 left-4 z-10 text-muted-foreground hover:text-foreground"
+          className="absolute top-24 left-4 z-10 text-muted-foreground hover:text-foreground"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
           Voltar
