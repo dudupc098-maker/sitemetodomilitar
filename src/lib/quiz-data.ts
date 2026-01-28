@@ -6,9 +6,9 @@ export const quizData = {
     '🚨 A Verdade: Você Não Dorme Mal Por Acaso. Descubra o MÉTODO MILITAR Que Faz Você Dormir Em 2 MINUTOS!',
   ],
   benefits: [
-    { icon: Zap, text: 'Adormeça mesmo com a mente acelerada' },
-    { icon: Moon, text: 'Pare de acordar cansado, mesmo dormindo “horas”' },
-    { icon: Rocket, text: 'Acorde sem peso no corpo e sem neblina mental' },
+    { icon: Zap, text: '⚡ Adormeça mesmo com a mente acelerada' },
+    { icon: Moon, text: '🌙 Pare de acordar cansado, mesmo dormindo “horas”' },
+    { icon: Rocket, text: '🚀 Acorde sem peso no corpo e sem neblina mental' },
   ],
   questions: [
     {
@@ -23,12 +23,12 @@ export const quizData = {
     },
     {
       id: 'q2',
-      question: 'Como a sua falta de sono afeta seu humor durante o dia?',
+      question: 'Com que frequência você sente que seu cansaço está fazendo você “ficar pra trás” dos outros?',
       options: [
-        { text: '💪 Não afeta, sou resiliente', value: 'A' },
-        { text: '⏱️ Fico um pouco irritável, mas controlo', value: 'B' },
-        { text: '😥 Meu pavio fica curto, qualquer coisa me estressa', value: 'C' },
-        { text: '💔 Sinto uma ansiedade e tristeza constantes', value: 'D' },
+        { text: '💪 Nunca, me sinto produtivo e no controle', value: 'A' },
+        { text: '⏱️ Às vezes, em dias mais cansativos', value: 'B' },
+        { text: '😥 Frequentemente, sinto que não estou no meu melhor', value: 'C' },
+        { text: '💔 Constantemente, sinto que o cansaço está me limitando', value: 'D' },
       ],
     },
     {
