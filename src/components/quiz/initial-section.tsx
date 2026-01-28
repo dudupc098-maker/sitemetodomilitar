@@ -18,7 +18,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
         {parts.map((part, index) => {
           if (!part) return null;
           if (part.match(/^(MÉTODO MILITAR|2 MINUTOS)$/i)) {
-            return <span key={index} className="text-yellow-400">{part}</span>;
+            return <span key={index} className="text-primary">{part}</span>;
           }
           return part;
         })}
