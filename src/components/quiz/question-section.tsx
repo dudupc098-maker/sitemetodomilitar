@@ -16,21 +16,37 @@ type QuestionSectionProps = {
 
 export default function QuestionSection({ question, onAnswer }: QuestionSectionProps) {
   const renderQuestion = (text: string) => {
-    if (question.id !== 'q1') {
-      return text;
+    if (question.id === 'q1') {
+      const parts = text.split(/(você acha que transmite\?)/i);
+      return (
+        <>
+          {parts.map((part, index) => {
+            if (!part) return null;
+            if (part.match(/^(você acha que transmite\?)$/i)) {
+              return <span key={index} className="text-primary">{part}</span>;
+            }
+            return part;
+          })}
+        </>
+      );
     }
-    const parts = text.split(/(você acha que transmite\?)/i);
-    return (
-      <>
-        {parts.map((part, index) => {
-          if (!part) return null;
-          if (part.match(/^(você acha que transmite\?)$/i)) {
-            return <span key={index} className="text-primary">{part}</span>;
-          }
-          return part;
-        })}
-      </>
-    );
+
+    if (question.id === 'q2') {
+      const parts = text.split(/(“ficar pra trás”)/i);
+      return (
+        <>
+          {parts.map((part, index) => {
+            if (!part) return null;
+            if (part.match(/^(“ficar pra trás”)$/i)) {
+              return <span key={index} className="text-primary">{part}</span>;
+            }
+            return part;
+          })}
+        </>
+      );
+    }
+
+    return text;
   };
 
   return (
