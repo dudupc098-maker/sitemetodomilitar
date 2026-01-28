@@ -40,7 +40,6 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
             <ul className="space-y-3">
               {quizData.benefits.map((benefit, index) => (
                 <li key={index} className="flex items-center gap-3">
-                  <benefit.icon className="h-6 w-6 shrink-0 text-accent" />
                   <span className="text-base font-medium">{benefit.text}</span>
                 </li>
               ))}
