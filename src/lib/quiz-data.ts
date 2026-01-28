@@ -63,12 +63,12 @@ export const quizData = {
     },
     {
       id: 'q6',
-      question: 'O que você já tentou para resolver seu problema de sono?',
+      question: 'Você estaria disposto a acordar com energia, sem parecer destruído todas as manhãs, igual a maioria das pessoas que já aplicam este método?',
       options: [
-        { text: 'Nada, estou começando a pesquisar agora', value: 'A' },
-        { text: 'Chás e técnicas de relaxamento', value: 'B' },
-        { text: 'Apps de meditação e ruído branco', value: 'C' },
-        { text: 'Remédios e suplementos, sem muito sucesso', value: 'D' },
+        { text: '🚀 Sim! Estou 100% pronto para acordar com energia total.', value: 'A' },
+        { text: '👍 Sim, parece ótimo, mas quero ver como funciona.', value: 'B' },
+        { text: '🤔 Talvez, mas ainda estou um pouco cético.', value: 'C' },
+        { text: '❌ Não, acredito que meu caso não tem solução.', value: 'D' },
       ],
     },
   ],
