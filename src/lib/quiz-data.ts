@@ -45,10 +45,10 @@ export const quizData = {
       id: 'q4',
       question: 'Quando você promete a si mesmo que vai “melhorar sua rotina de sono”… o que realmente acontece?',
       options: [
-        { text: '🏆 Fico motivado(a) por um tempo, mas a vida atrapalha.', value: 'A' },
-        { text: '🗓️ Sigo o plano por 1-2 dias e depois volto aos velhos hábitos.', value: 'B' },
-        { text: '😔 Já tentei tantas vezes que nem acredito mais que posso mudar.', value: 'C' },
-        { text: '😖 Não sei por onde começar, então acabo não fazendo nada.', value: 'D' },
+        { text: '🏆 Eu cumpro', value: 'A' },
+        { text: '🗓️ Faço por alguns dias, depois desando', value: 'B' },
+        { text: '😔 Sempre volto aos velhos hábitos', value: 'C' },
+        { text: '😖 Nem começo, já sinto que vou falhar', value: 'D' },
       ],
     },
     {
