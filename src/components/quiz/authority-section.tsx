@@ -26,7 +26,7 @@ export default function AuthoritySection({ onContinue }: AuthoritySectionProps) 
             👀 Veja Como Matérias Falam da Técnica Militar Para Dormir em 2 Minutos
             </h2>
             <p className="mt-2 text-lg text-muted-foreground">
-            NÃO É ACHISMO, É CIÊNCIA!
+            NÃO É <span className="font-bold text-destructive">ACHISMO</span>, É <span className="font-bold text-accent">CIÊNCIA</span>!
             </p>
        </div>
       <Carousel
