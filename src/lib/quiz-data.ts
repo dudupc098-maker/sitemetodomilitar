@@ -4,7 +4,6 @@ export const quizData = {
   totalQuestions: 6,
   headlines: [
     '🚨 A Verdade: Você Não Dorme Mal Por Acaso. Descubra o MÉTODO MILITAR Que Faz Você Dormir Em 2 MINUTOS!',
-    '🚨 Cansado de Rolar na Cama? Descubra o MÉTODO MILITAR Que Apaga Sua Mente em 2 Minutos!',
   ],
   benefits: [
     { icon: Zap, text: 'Adormeça mesmo com a mente acelerada' },
@@ -16,10 +15,10 @@ export const quizData = {
       id: 'q1',
       question: 'Quando alguém olha para você de manhã, que imagem você acha que transmite?',
       options: [
-        { text: 'Pessoa forte, descansada e confiante', value: 'A' },
-        { text: 'Ok… mas dá pra notar um leve cansaço', value: 'B' },
-        { text: 'Pareço sempre cansado(a), mesmo quando tento disfarçar', value: 'C' },
-        { text: 'Claramente esgotado(a) e sem energia', value: 'D' },
+        { text: '😎 Pessoa forte, descansada e confiante', value: 'A' },
+        { text: '🙂 Ok… mas dá pra notar um leve cansaço', value: 'B' },
+        { text: '😩 Pareço sempre cansado(a), mesmo quando tento disfarçar', value: 'C' },
+        { text: '😬 Claramente esgotado(a) e sem energia', value: 'D' },
       ],
     },
     {
