@@ -25,10 +25,10 @@ export const quizData = {
       id: 'q2',
       question: 'Como a sua falta de sono afeta seu humor durante o dia?',
       options: [
-        { text: 'Não afeta, sou resiliente', value: 'A' },
-        { text: 'Fico um pouco irritável, mas controlo', value: 'B' },
-        { text: 'Meu pavio fica curto, qualquer coisa me estressa', value: 'C' },
-        { text: 'Sinto uma ansiedade e tristeza constantes', value: 'D' },
+        { text: '💪 Não afeta, sou resiliente', value: 'A' },
+        { text: '⏱️ Fico um pouco irritável, mas controlo', value: 'B' },
+        { text: '😥 Meu pavio fica curto, qualquer coisa me estressa', value: 'C' },
+        { text: '💔 Sinto uma ansiedade e tristeza constantes', value: 'D' },
       ],
     },
     {
