@@ -17,8 +17,8 @@ export default function ProgressBarComponent({ progress }: ProgressBarProps) {
             <Image
                 src="https://i.imgur.com/24k01is.png"
                 alt="Logo"
-                width={128}
-                height={32}
+                width={100}
+                height={25}
                 className="object-contain"
             />
         </div>
