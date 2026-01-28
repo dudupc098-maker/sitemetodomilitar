@@ -15,12 +15,30 @@ type QuestionSectionProps = {
 };
 
 export default function QuestionSection({ question, onAnswer }: QuestionSectionProps) {
+  const renderQuestion = (text: string) => {
+    if (question.id !== 'q1') {
+      return text;
+    }
+    const parts = text.split(/(você acha que transmite\?)/i);
+    return (
+      <>
+        {parts.map((part, index) => {
+          if (!part) return null;
+          if (part.match(/^(você acha que transmite\?)$/i)) {
+            return <span key={index} className="text-primary">{part}</span>;
+          }
+          return part;
+        })}
+      </>
+    );
+  };
+
   return (
     <div className="w-full max-w-2xl animate-fade-in-up">
       <Card className="border-0 bg-transparent shadow-none md:border md:bg-card md:shadow-lg">
         <CardHeader>
           <CardTitle className="font-headline text-center text-2xl md:text-3xl">
-            {question.question}
+            {renderQuestion(question.question)}
           </CardTitle>
         </CardHeader>
         <CardContent>
