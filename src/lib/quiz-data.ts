@@ -6,9 +6,9 @@ export const quizData = {
     '🚨 A Verdade: Você Não Dorme Mal Por Acaso. Descubra o MÉTODO MILITAR Que Faz Você Dormir Em 2 MINUTOS!',
   ],
   benefits: [
-    { icon: Zap, text: '⚡ Adormeça mesmo com a mente acelerada' },
-    { icon: Moon, text: '🌙 Pare de acordar cansado, mesmo dormindo “horas”' },
-    { icon: Rocket, text: '🚀 Acorde sem peso no corpo e sem neblina mental' },
+    { text: '⚡ Adormeça mesmo com a mente acelerada' },
+    { text: '🌙 Pare de acordar cansado, mesmo dormindo “horas”' },
+    { text: '🚀 Acorde sem peso no corpo e sem neblina mental' },
   ],
   questions: [
     {
@@ -33,12 +33,12 @@ export const quizData = {
     },
     {
       id: 'q3',
-      question: 'O que acontece quando você tenta se concentrar em uma tarefa importante?',
+      question: 'Quando foi a última vez que você acordou e percebeu que, mesmo dormindo, continuava exausto(a)?',
       options: [
-        { text: '😞 Foco total, sem problemas', value: 'A' },
-        { text: '🌙 Leva um tempo para engrenar', value: 'B' },
-        { text: '🤔 Minha mente vaga e cometo erros bobos', value: 'C' },
-        { text: '💔 É quase impossível, sinto uma névoa mental', value: 'D' },
+        { text: '🤔 Não me lembro, sinto-me revigorado(a) na maioria das vezes.', value: 'A' },
+        { text: '🌙 Aconteceu algumas vezes no último mês.', value: 'B' },
+        { text: '😞 Nesta semana, mais de uma vez.', value: 'C' },
+        { text: '💔 Hoje de manhã. É uma sensação constante.', value: 'D' },
       ],
     },
     {
