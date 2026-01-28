@@ -53,12 +53,12 @@ export const quizData = {
     },
     {
       id: 'q5',
-      question: 'Quantas noites por semana você tem sono insatisfatório?',
+      question: 'Se existisse um método rápido e comprovado capaz de fazer você dormir em poucos minutos todas as noites, você gostaria de ter acesso a ele ainda hoje?',
       options: [
-        { text: 'Raramente (0–1 noite)', value: 'A' },
-        { text: 'Algumas vezes (2–3 noites)', value: 'B' },
-        { text: 'Frequentemente (4–5 noites)', value: 'C' },
-        { text: 'Quase sempre (6–7 noites)', value: 'D' },
+        { text: '✅ Sim, com certeza! Quero ter acesso imediato.', value: 'A' },
+        { text: '🤔 Sim, mas preciso entender como funciona primeiro.', value: 'B' },
+        { text: '😥 Tenho dúvidas, já tentei de tudo e nada funcionou.', value: 'C' },
+        { text: '❌ Não, obrigado(a).', value: 'D' },
       ],
     },
     {
