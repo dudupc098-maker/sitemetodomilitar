@@ -56,7 +56,7 @@ export default function AuthoritySection({ onContinue }: AuthoritySectionProps) 
                         src={src}
                         alt={`Matéria sobre técnica militar ${index + 1}`}
                         fill
-                        className="object-contain"
+                        className="object-cover"
                     />
                 </div>
               </div>
