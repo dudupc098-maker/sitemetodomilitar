@@ -37,33 +37,35 @@ export default function AuthoritySection({ onContinue }: AuthoritySectionProps) 
             NÃO É <span className="font-bold text-destructive">ACHISMO</span>, É <span className="font-bold text-accent">CIÊNCIA</span>!
             </p>
        </div>
-      <Carousel
-        plugins={[plugin.current]}
-        opts={{
-          align: 'start',
-          loop: true,
-        }}
-        className="w-full"
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.play}
-      >
-        <CarouselContent>
-          {carouselImages.map((src, index) => (
-            <CarouselItem key={index}>
-              <div className="p-1">
-                <div className="relative aspect-video w-full overflow-hidden rounded-lg">
-                    <Image
-                        src={src}
-                        alt={`Matéria sobre técnica militar ${index + 1}`}
-                        fill
-                        className="object-contain"
-                    />
+      <div className="-mx-4 overflow-hidden sm:mx-0 sm:rounded-lg">
+        <Carousel
+          plugins={[plugin.current]}
+          opts={{
+            align: 'start',
+            loop: true,
+          }}
+          className="w-full"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.play}
+        >
+          <CarouselContent>
+            {carouselImages.map((src, index) => (
+              <CarouselItem key={index}>
+                <div className="p-1">
+                  <div className="relative aspect-video w-full">
+                      <Image
+                          src={src}
+                          alt={`Matéria sobre técnica militar ${index + 1}`}
+                          fill
+                          className="object-contain"
+                      />
+                  </div>
                 </div>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </Carousel>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </div>
       <div className="text-center">
         <Button onClick={onContinue} size="lg">CONTINUAR</Button>
       </div>
