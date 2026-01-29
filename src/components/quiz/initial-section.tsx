@@ -44,7 +44,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
                 </li>
               ))}
             </ul>
-            <Button onClick={onStart} size="lg" className="w-full font-bold text-lg">
+            <Button onClick={onStart} size="lg" className="w-full font-bold text-lg animate-pulse-grow">
                 INICIAR TESTE AGORA!
             </Button>
           </div>
