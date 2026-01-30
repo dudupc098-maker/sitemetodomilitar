@@ -110,6 +110,11 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
     return text;
   };
 
+  const questionImage = {
+    q1: 'https://i.imgur.com/jmBEewv.jpeg',
+    q2: 'https://i.imgur.com/sSDRXmi.jpeg',
+  }[question.id as 'q1' | 'q2'];
+
   return (
     <div className="w-full max-w-2xl animate-fade-in-up">
       <Card className="border-0 bg-transparent shadow-none md:border md:bg-card md:shadow-lg">
@@ -119,11 +124,11 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
           </CardTitle>
         </CardHeader>
 
-        {question.id === 'q1' && (
+        {questionImage && (
           <div className="px-6 pb-6">
             <div className="relative mx-auto w-full max-w-sm aspect-square">
               <Image
-                src="https://i.imgur.com/jmBEewv.jpeg"
+                src={questionImage}
                 alt="Imagem ilustrativa para a pergunta"
                 fill
                 className="rounded-lg object-cover"
