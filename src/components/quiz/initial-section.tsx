@@ -17,7 +17,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
       <Card className="border-0 bg-transparent shadow-none">
         <CardContent className="flex flex-col items-center justify-center space-y-6 p-4 md:space-y-8 md:p-6">
           <h1 className="text-3xl font-bold text-foreground md:text-5xl">
-            Descubra Agora Como Você Pode Dormir Em Menos de <span className="text-primary">2 MINUTOS!</span>
+            Descubra Agora Como Você Pode Dormir Em <span className="text-primary">Menos de 2 MINUTOS!</span>
           </h1>
 
           {heroImage && (
