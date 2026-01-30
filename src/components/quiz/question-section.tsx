@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -117,6 +118,20 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
             {renderQuestion(question.question)}
           </CardTitle>
         </CardHeader>
+
+        {question.id === 'q1' && (
+          <div className="px-6 pb-6">
+            <div className="relative mx-auto w-full max-w-sm aspect-square">
+              <Image
+                src="https://i.imgur.com/jmBEewv.jpeg"
+                alt="Imagem ilustrativa para a pergunta"
+                fill
+                className="rounded-lg object-cover"
+              />
+            </div>
+          </div>
+        )}
+        
         <CardContent>
           <div className="grid grid-cols-1 gap-4">
             {question.options.map((option) => (
