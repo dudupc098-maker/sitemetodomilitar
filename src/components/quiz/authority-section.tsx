@@ -16,7 +16,7 @@ type AuthoritySectionProps = {
 };
 
 const carouselImages = [
-  'https://i.imgur.com/6W60igp.jpeg',
+  'https://i.imgur.com/gPmjslE.png',
   'https://i.imgur.com/NbVS38M.png',
   'https://i.imgur.com/xNUVJ1g.png',
   'https://i.imgur.com/ifVygSu.png',
