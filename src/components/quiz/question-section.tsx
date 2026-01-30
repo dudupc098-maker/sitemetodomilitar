@@ -113,8 +113,7 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
   const questionImage = {
     q1: 'https://i.imgur.com/jmBEewv.jpeg',
     q2: 'https://i.imgur.com/sSDRXmi.jpeg',
-    q4: 'https://i.imgur.com/U117XEe.png',
-  }[question.id as 'q1' | 'q2' | 'q4'];
+  }[question.id as 'q1' | 'q2'];
 
   return (
     <div className="w-full max-w-2xl animate-fade-in-up">
