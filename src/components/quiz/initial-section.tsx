@@ -1,54 +1,46 @@
 'use client';
 
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { quizData } from '@/lib/quiz-data';
+import { Card, CardContent } from '@/components/ui/card';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 type InitialSectionProps = {
   onStart: () => void;
 };
 
 export default function InitialSection({ onStart }: InitialSectionProps) {
-  const headline = quizData.headlines[0];
-  
-  const renderHeadline = (text: string) => {
-    const parts = text.split(/(MÉTODO MILITAR|2 MINUTOS)/i);
-    return (
-      <>
-        {parts.map((part, index) => {
-          if (!part) return null;
-          if (part.match(/^(MÉTODO MILITAR|2 MINUTOS)$/i)) {
-            return <span key={index} className="text-primary">{part}</span>;
-          }
-          return part;
-        })}
-      </>
-    );
-  };
+  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
 
   return (
-    <div className="w-full max-w-4xl animate-fade-in-up">
-      <Card className="overflow-hidden border-0 bg-transparent shadow-none md:border md:bg-card md:shadow-lg">
-        <div className="grid items-center">
-          <div className="space-y-6 p-6 md:p-8">
-            <h1 className="text-2xl font-bold text-white md:text-4xl">
-              {renderHeadline(headline)}
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Teste rápido (60s): descubra o que está sabotando seu sono e receba um diagnóstico personalizado ainda hoje.
-            </p>
-            <ul className="space-y-3">
-              {quizData.benefits.map((benefit, index) => (
-                <li key={index} className="flex items-center gap-3">
-                  <span className="text-base font-medium">{benefit.text}</span>
-                </li>
-              ))}
-            </ul>
-            <Button onClick={onStart} size="lg" className="w-full font-bold text-lg animate-pulse-grow">
-                INICIAR TESTE AGORA!
-            </Button>
-          </div>
-        </div>
+    <div className="w-full max-w-2xl animate-fade-in-up text-center">
+      <Card className="border-0 bg-transparent shadow-none">
+        <CardContent className="flex flex-col items-center justify-center space-y-6 p-4 md:space-y-8 md:p-6">
+          <h1 className="text-3xl font-bold text-white md:text-5xl">
+            Descubra Agora Como Você Pode Dormir Em Menos de <span className="text-primary">2 MINUTOS!</span>
+          </h1>
+
+          <p className="max-w-xl text-lg text-muted-foreground">
+            Teste rápido (60s): descubra o que está sabotando seu sono e receba um diagnóstico personalizado ainda hoje.
+          </p>
+
+          {heroImage && (
+            <div className="relative w-full max-w-md aspect-[16/10] overflow-hidden rounded-lg shadow-2xl shadow-primary/10">
+              <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                fill
+                className="object-cover"
+                data-ai-hint={heroImage.imageHint}
+                priority 
+              />
+            </div>
+          )}
+
+          <Button onClick={onStart} size="lg" className="w-full max-w-sm text-lg font-bold">
+            QUERO DESCOBRIR AGORA!
+          </Button>
+        </CardContent>
       </Card>
     </div>
   );

@@ -2,14 +2,6 @@ import { CheckCircle, Zap, Moon, Rocket, Award, Shield } from 'lucide-react';
 
 export const quizData = {
   totalQuestions: 6,
-  headlines: [
-    '🚨 A Verdade: Você Não Dorme Mal Por Acaso. Descubra o MÉTODO MILITAR Que Faz Você Dormir Em 2 MINUTOS!',
-  ],
-  benefits: [
-    { text: '⚡ Adormeça mesmo com a mente acelerada' },
-    { text: '🌙 Pare de acordar cansado, mesmo dormindo “horas”' },
-    { text: '🚀 Acorde sem peso no corpo e sem neblina mental' },
-  ],
   questions: [
     {
       id: 'q1',
