@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-image",
-      "description": "A person sleeping peacefully in a dark, calm room.",
-      "imageUrl": "https://images.unsplash.com/photo-1499128693704-802c524b2296?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZWFjZWZ1bCUyMHNsZWVwfGVufDB8fHx8MTc3MDE3MTM1N3ww&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "peaceful sleep"
+      "description": "Matéria de notícia sobre o método militar para dormir.",
+      "imageUrl": "https://i.imgur.com/6W60igp.jpeg",
+      "imageHint": "news article"
     },
     {
       "id": "authority-1",
