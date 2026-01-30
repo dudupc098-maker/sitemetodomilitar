@@ -50,7 +50,7 @@ export default function PlansSection() {
                     A solução completa para um sono transformador.
                 </CardDescription>
                 <div className="flex items-baseline gap-2 pt-4">
-                    <span className="text-4xl font-bold text-white">R${isMounted ? proPrice : '...'}</span>
+                    <span className="text-4xl font-bold text-foreground">R${isMounted ? proPrice : '...'}</span>
                     <span className="text-xl font-medium text-muted-foreground line-through">R${quizData.plans.pro.originalPrice}</span>
                 </div>
             </CardHeader>
@@ -78,7 +78,7 @@ export default function PlansSection() {
                     O conhecimento essencial para começar.
                 </CardDescription>
                 <div className="flex items-baseline gap-2 pt-4">
-                    <span className="text-4xl font-bold text-white">R${quizData.plans.basic.price.toFixed(2).replace('.',',')}</span>
+                    <span className="text-4xl font-bold text-foreground">R${quizData.plans.basic.price.toFixed(2).replace('.',',')}</span>
                 </div>
             </CardHeader>
             <CardContent className="space-y-3">

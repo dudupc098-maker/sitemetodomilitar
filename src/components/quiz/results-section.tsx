@@ -13,7 +13,7 @@ type ResultsSectionProps = {
 export default function ResultsSection({ plan, onCtaClick }: ResultsSectionProps) {
   return (
     <section className="animate-fade-in-up text-center">
-      <h1 className="font-headline text-3xl font-bold text-white md:text-5xl">
+      <h1 className="font-headline text-3xl font-bold text-foreground md:text-5xl">
         🎉 Parabéns! Seu método ideal é: <span className="text-primary">{plan.method}</span>
       </h1>
       <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground md:text-xl">
