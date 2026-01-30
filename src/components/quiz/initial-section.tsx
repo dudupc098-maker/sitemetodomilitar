@@ -20,10 +20,6 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
             Descubra Agora Como Você Pode Dormir Em Menos de <span className="text-primary">2 MINUTOS!</span>
           </h1>
 
-          <p className="max-w-xl text-lg text-muted-foreground">
-            Teste rápido (60s): descubra o que está sabotando seu sono e receba um diagnóstico personalizado ainda hoje.
-          </p>
-
           {heroImage && (
             <div className="relative w-full max-w-md aspect-[16/10] overflow-hidden rounded-lg shadow-2xl shadow-primary/10">
               <Image
@@ -36,6 +32,10 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
               />
             </div>
           )}
+
+          <p className="max-w-xl text-lg text-muted-foreground">
+            Teste rápido (60s): descubra o que está sabotando seu sono e receba um diagnóstico personalizado ainda hoje.
+          </p>
 
           <Button onClick={onStart} size="lg" className="w-full max-w-sm text-lg font-bold">
             QUERO DESCOBRIR AGORA!
