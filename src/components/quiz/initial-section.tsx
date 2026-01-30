@@ -33,9 +33,12 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
             </div>
           )}
 
-          <p className="max-w-xl text-lg text-muted-foreground">
-            Teste rápido (60s): descubra o que está sabotando seu sono e receba um diagnóstico personalizado ainda hoje.
-          </p>
+          <div className="space-y-2">
+            <p className="max-w-xl text-lg text-muted-foreground">
+              Teste rápido (60s): descubra o que está sabotando seu sono e receba um diagnóstico personalizado ainda hoje.
+            </p>
+            <p className="text-2xl">👇</p>
+          </div>
 
           <Button onClick={onStart} size="lg" className="w-full max-w-sm text-lg font-bold">
             QUERO DESCOBRIR AGORA!
