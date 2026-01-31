@@ -17,22 +17,6 @@ export default function ResultsSection({ plan }: ResultsSectionProps) {
       <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground md:text-xl">
         Com base em suas respostas, o Método Sono Militar é ideal para fazer seu corpo dormir rápido em menos de 2 minutos.
       </p>
-
-      <div className="mt-12 grid gap-4 md:grid-cols-3">
-        {plan.insights.map((insight, index) => (
-          <Card key={index} className="border-border/50 bg-card/50 text-center">
-            <CardHeader>
-              <CardTitle className="flex items-center justify-center gap-2 text-lg">
-                <Lightbulb className="h-5 w-5 text-accent" />
-                Insight #{index + 1}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">{insight}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
     </section>
   );
 }
