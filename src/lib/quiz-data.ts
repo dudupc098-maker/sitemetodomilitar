@@ -119,10 +119,5 @@ export const quizData = {
       text: 'Entender como a alimentação e o ambiente influenciam seu sono para noites reparadoras.',
       highlight: 'alimentação e o ambiente',
     },
-    {
-      icon: CheckCircle,
-      text: 'Ter um guia prático para lidar com despertares noturnos e voltar a dormir rápido.',
-      highlight: 'despertares noturnos',
-    },
   ],
 };
