@@ -2,6 +2,32 @@
 
 import { quizData } from '@/lib/quiz-data';
 
+type SalesPoint = {
+    icon: React.ComponentType<{ className?: string }>;
+    text: string;
+    highlight: string;
+}
+
+const renderHighlightedText = (text: string, highlight: string) => {
+    if (!highlight) {
+        return text;
+    }
+    const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
+    return (
+        <>
+            {parts.map((part, i) =>
+                part.toLowerCase() === highlight.toLowerCase() ? (
+                    <span key={i} className="font-bold text-primary">
+                        {part}
+                    </span>
+                ) : (
+                    part
+                )
+            )}
+        </>
+    );
+};
+
 export default function SalesPointsSection() {
   return (
     <section>
@@ -14,11 +40,13 @@ export default function SalesPointsSection() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-8 md:grid-cols-2">
-        {quizData.salesPoints.map((point, index) => (
-          <div key={index} className="flex items-start gap-4">
+      <div className="mt-12 flex flex-col gap-4">
+        {(quizData.salesPoints as SalesPoint[]).map((point, index) => (
+          <div key={index} className="flex items-start gap-4 rounded-lg border bg-card p-6 shadow-sm transition-all hover:border-primary/50 hover:shadow-md">
             <point.icon className="mt-1 h-6 w-6 shrink-0 text-primary" />
-            <p className="text-lg text-muted-foreground">{point.text}</p>
+            <p className="text-lg text-card-foreground">
+                {renderHighlightedText(point.text, point.highlight)}
+            </p>
           </div>
         ))}
       </div>

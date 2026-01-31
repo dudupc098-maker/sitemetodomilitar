@@ -1,4 +1,4 @@
-import { CheckCircle, Zap, Moon, Rocket, Award, Shield } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 export const quizData = {
   totalQuestions: 6,
@@ -96,71 +96,33 @@ export const quizData = {
   salesPoints: [
     {
       icon: CheckCircle,
-      text: 'Criar um ritual noturno poderoso que sinaliza ao seu corpo que é hora de dormir.',
+      text: 'Criar um ritual noturno poderoso para adormecer rápido e acordar renovado.',
+      highlight: 'ritual noturno poderoso',
     },
     {
       icon: CheckCircle,
-      text: 'Dominar estratégias cognitivas para vencer a insônia e acalmar a mente.',
+      text: 'Dominar estratégias cognitivas para vencer a insônia de vez.',
+      highlight: 'estratégias cognitivas',
     },
     {
       icon: CheckCircle,
-      text: 'Aprender técnicas avançadas de relaxamento mental e físico usadas por militares.',
+      text: 'Aplicar técnicas avançadas de relaxamento mental e físico.',
+      highlight: 'técnicas avançadas',
     },
     {
       icon: CheckCircle,
-      text: 'Desenvolver um plano de sono 100% personalizado para sua rotina.',
+      text: 'Montar um plano de sono 100% personalizado, adaptado à sua rotina.',
+      highlight: 'plano de sono 100% personalizado',
     },
     {
       icon: CheckCircle,
-      text: 'Entender como usar a alimentação e o ambiente a seu favor.',
+      text: 'Entender como a alimentação e o ambiente influenciam seu sono para noites reparadoras.',
+      highlight: 'alimentação e o ambiente',
     },
     {
       icon: CheckCircle,
-      text: 'Receber um guia para lidar com despertares noturnos e voltar a dormir rápido.',
+      text: 'Ter um guia prático para lidar com despertares noturnos e voltar a dormir rápido.',
+      highlight: 'despertares noturnos',
     },
-  ],
-  testimonials: [
-    {
-      id: 't1',
-      name: 'Juliana P.',
-      location: 'São Paulo, SP',
-      text: 'Eu levava 2h para dormir. Com o método, apago em minutos. De 4h de sono por noite para 7h em menos de uma semana. Mudou minha vida!',
-      imageUrlId: 'testimonial-1',
-    },
-    {
-      id: 't2',
-      name: 'Marcos A.',
-      location: 'Rio de Janeiro, RJ',
-      text: 'Achei que era exagero, mas a técnica de respiração e relaxamento é surreal. Acordo outra pessoa, com energia de verdade.',
-      imageUrlId: 'testimonial-2',
-    },
-    {
-      id: 't3',
-      name: 'Carla S.',
-      location: 'Belo Horizonte, MG',
-      text: 'Meu problema era a ansiedade na hora de deitar. O método me deu o controle que eu precisava. Indispensável para quem tem a mente a mil.',
-      imageUrlId: 'testimonial-3',
-    },
-  ],
-  plans: {
-    pro: {
-      priceVariants: [37, 47],
-      originalPrice: 127,
-      features: [
-        'Ebook Completo "O Código do Sono"',
-        'Área de Membros Exclusiva',
-        '15 Aulas em Vídeo Passo a Passo',
-        '3 Bônus: Guia de Nutrição, Diário do Sono e Playlist de Relaxamento',
-        'Acesso Vitalício à Comunidade de Alunos',
-      ],
-    },
-    basic: {
-      price: 12.90,
-      features: ['Apenas o Ebook "O Código do Sono"'],
-    },
-  },
-  guarantees: [
-    { icon: Award, text: '7 Dias de Garantia de Satisfação Total' },
-    { icon: Shield, text: 'Compra 100% Segura e Protegida' },
   ],
 };
