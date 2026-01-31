@@ -1,16 +1,14 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { PersonalizedSleepPlanOutput } from '@/ai/flows/personalized-sleep-plan';
 import { Lightbulb } from 'lucide-react';
 
 type ResultsSectionProps = {
   plan: PersonalizedSleepPlanOutput;
-  onCtaClick: () => void;
 };
 
-export default function ResultsSection({ plan, onCtaClick }: ResultsSectionProps) {
+export default function ResultsSection({ plan }: ResultsSectionProps) {
   return (
     <section className="animate-fade-in-up text-center">
       <h1 className="font-headline text-3xl font-bold text-foreground md:text-5xl">
@@ -34,12 +32,6 @@ export default function ResultsSection({ plan, onCtaClick }: ResultsSectionProps
             </CardContent>
           </Card>
         ))}
-      </div>
-
-      <div className="mt-12">
-        <Button size="lg" className="h-14 px-10 text-xl font-bold" onClick={onCtaClick}>
-          VER MEU PLANO PERSONALIZADO
-        </Button>
       </div>
     </section>
   );

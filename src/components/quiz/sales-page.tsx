@@ -4,8 +4,6 @@ import type { PersonalizedSleepPlanOutput } from '@/ai/flows/personalized-sleep-
 import ResultsSection from './results-section';
 import SalesPointsSection from './sales-points-section';
 import TestimonialsSection from './testimonials-section';
-import PlansSection from './plans-section';
-import StickyCta from './sticky-cta';
 import { trackEvent } from '@/lib/analytics';
 import { useEffect } from 'react';
 import { Button } from '../ui/button';
@@ -36,16 +34,10 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         Voltar
       </Button>
       <div className="container mx-auto max-w-4xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
-        <ResultsSection plan={plan} onCtaClick={scrollToPlans} />
-        <SalesPointsSection onCtaClick={scrollToPlans} />
+        <ResultsSection plan={plan} />
+        <SalesPointsSection />
         <TestimonialsSection />
-        <PlansSection />
       </div>
-      <StickyCta>
-        <Button size="lg" className="w-full font-bold" onClick={scrollToPlans}>
-            QUERO O PLANO PRÓ
-        </Button>
-      </StickyCta>
     </div>
   );
 }

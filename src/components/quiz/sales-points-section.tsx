@@ -1,14 +1,8 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { quizData } from '@/lib/quiz-data';
 
-type SalesPointsSectionProps = {
-  onCtaClick: () => void;
-};
-
-export default function SalesPointsSection({ onCtaClick }: SalesPointsSectionProps) {
+export default function SalesPointsSection() {
   return (
     <section>
       <div className="text-center">
@@ -27,19 +21,6 @@ export default function SalesPointsSection({ onCtaClick }: SalesPointsSectionPro
             <p className="text-lg text-muted-foreground">{point.text}</p>
           </div>
         ))}
-      </div>
-      
-      <div className="mt-12 text-center">
-        <Card className="mx-auto inline-block border-primary bg-primary/10">
-            <CardContent className="p-6">
-                <p className="text-xl font-bold">
-                    Tudo isso e muito mais está incluso no seu acesso.
-                </p>
-                <Button size="lg" className="mt-4 font-bold" onClick={onCtaClick}>
-                    QUERO O PLANO PRÓ
-                </Button>
-            </CardContent>
-        </Card>
       </div>
     </section>
   );
