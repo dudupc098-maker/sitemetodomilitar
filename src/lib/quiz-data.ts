@@ -114,10 +114,5 @@ export const quizData = {
       text: 'Montar um plano de sono 100% personalizado, adaptado à sua rotina.',
       highlight: 'plano de sono 100% personalizado',
     },
-    {
-      icon: CheckCircle,
-      text: 'Entender como a alimentação e o ambiente influenciam seu sono para noites reparadoras.',
-      highlight: 'alimentação e o ambiente',
-    },
   ],
 };
