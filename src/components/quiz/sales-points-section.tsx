@@ -35,9 +35,6 @@ export default function SalesPointsSection() {
         <h2 className="font-headline text-3xl font-bold md:text-4xl">
           O que você vai aprender no Método Sono Militar
         </h2>
-        <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
-          Um passo a passo completo para transformar suas noites e seus dias.
-        </p>
       </div>
 
       <div className="mt-12 flex flex-col gap-4">
