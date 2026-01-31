@@ -144,7 +144,7 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
                 key={option.value}
                 variant="outline"
                 size="lg"
-                className="h-auto min-h-14 justify-start whitespace-normal py-4 text-left text-base leading-snug"
+                className="h-auto min-h-14 w-full justify-start whitespace-normal rounded-lg bg-card p-4 text-left text-base font-normal text-card-foreground shadow-sm transition-all duration-200 hover:border-primary hover:shadow-md hover:bg-card hover:text-card-foreground active:scale-[0.99]"
                 onClick={() => onAnswer(option.value)}
               >
                 {option.text}
