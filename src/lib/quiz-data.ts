@@ -93,26 +93,4 @@ export const quizData = {
     'Preparando o diagnóstico que coloca você no 1% que dorme profundamente...',
     'Seu plano personalizado está quase pronto!',
   ],
-  salesPoints: [
-    {
-      icon: CheckCircle,
-      text: 'Criar um ritual noturno poderoso para adormecer rápido e acordar renovado.',
-      highlight: 'ritual noturno poderoso',
-    },
-    {
-      icon: CheckCircle,
-      text: 'Dominar estratégias cognitivas para vencer a insônia de vez.',
-      highlight: 'estratégias cognitivas',
-    },
-    {
-      icon: CheckCircle,
-      text: 'Aplicar técnicas avançadas de relaxamento mental e físico.',
-      highlight: 'técnicas avançadas',
-    },
-    {
-      icon: CheckCircle,
-      text: 'Montar um plano de sono 100% personalizado, adaptado à sua rotina.',
-      highlight: 'plano de sono 100% personalizado',
-    },
-  ],
 };
