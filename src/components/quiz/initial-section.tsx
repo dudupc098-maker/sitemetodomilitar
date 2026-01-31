@@ -40,7 +40,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
             <p className="text-2xl">👇</p>
           </div>
 
-          <Button onClick={onStart} size="lg" className="w-full max-w-sm text-lg font-bold">
+          <Button onClick={onStart} size="lg" className="w-full max-w-sm text-lg font-bold animate-pulse-cta">
             QUERO DESCOBRIR AGORA!
           </Button>
         </CardContent>

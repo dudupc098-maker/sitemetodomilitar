@@ -88,11 +88,26 @@ export default {
             transform: 'translateY(0)'
           },
         },
+        'pulse-cta': {
+          '0%': {
+            transform: 'scale(1)',
+            boxShadow: '0 0 0 0 hsla(var(--warning), 0.7)',
+          },
+          '70%': {
+            transform: 'scale(1.02)',
+            boxShadow: '0 0 0 10px hsla(var(--warning), 0)',
+          },
+          '100%': {
+            transform: 'scale(1)',
+            boxShadow: '0 0 0 0 hsla(var(--warning), 0)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+        'pulse-cta': 'pulse-cta 2s infinite',
       },
     },
   },
