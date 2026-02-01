@@ -32,13 +32,7 @@ const authorityPoints = [
 export default function MethodAuthoritySection() {
   return (
     <section className="animate-fade-in-up">
-      <div className="space-y-6 text-center">
-        <h2 className="font-headline text-3xl font-bold md:text-4xl">
-          Não é força de vontade. É método.
-        </h2>
-      </div>
-
-      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {authorityPoints.map((point) => (
           <div key={point.title} className="rounded-xl border border-border/50 bg-card/50 p-6 text-center shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
             <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
