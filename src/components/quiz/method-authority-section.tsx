@@ -36,12 +36,6 @@ export default function MethodAuthoritySection() {
         <h2 className="font-headline text-3xl font-bold md:text-4xl">
           Não é força de vontade. É método.
         </h2>
-        <p className="mx-auto max-w-3xl text-lg text-muted-foreground md:text-xl">
-          O Método Sono Militar segue uma sequência lógica e testada, baseada no
-          controle do sistema nervoso, relaxamento progressivo e direcionamento
-          mental. É uma técnica replicável, desenvolvida para funcionar sob
-          pressão e que agora pode ser adaptada para sua rotina.
-        </p>
       </div>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
