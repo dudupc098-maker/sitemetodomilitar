@@ -6,6 +6,7 @@ import { trackEvent } from '@/lib/analytics';
 import { useEffect } from 'react';
 import { Button } from '../ui/button';
 import { ArrowLeft } from 'lucide-react';
+import MethodAuthoritySection from './method-authority-section';
 
 type SalesPageProps = {
   plan: PersonalizedSleepPlanOutput;
@@ -27,8 +28,9 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         <ArrowLeft className="mr-2 h-4 w-4" />
         Voltar
       </Button>
-      <div className="container mx-auto max-w-4xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
+      <div className="container mx-auto max-w-5xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
         <ResultsSection plan={plan} />
+        <MethodAuthoritySection />
       </div>
     </div>
   );
