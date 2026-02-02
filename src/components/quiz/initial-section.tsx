@@ -37,6 +37,14 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
               Teste rápido (60s): descubra o que está <span className="font-bold">sabotando seu sono</span>.
             </p>
 
+            <div className="flex justify-center py-2">
+              <div className="space-y-1 text-left text-muted-foreground">
+                <p>❌ Sem remédios</p>
+                <p>❌ Sem técnicas complicadas</p>
+                <p>❌ Sem mudar sua rotina</p>
+              </div>
+            </div>
+
             <p className="text-2xl">👇</p>
           </div>
 
