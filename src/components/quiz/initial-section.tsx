@@ -34,7 +34,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
 
           <div className="space-y-2">
             <p className="max-w-xl text-lg text-muted-foreground">
-              Teste rápido (60s): descubra o que está <span className="font-bold">sabotando seu sono</span> e receba um <span className="font-bold">diagnóstico personalizado</span> ainda hoje.
+              Teste rápido (60s): descubra o que está <span className="font-bold">sabotando seu sono</span>.
             </p>
             <p className="text-2xl">👇</p>
           </div>
