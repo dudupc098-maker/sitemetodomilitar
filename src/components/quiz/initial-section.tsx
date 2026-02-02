@@ -15,7 +15,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
   return (
     <div className="w-full max-w-2xl animate-fade-in-up space-y-8 text-center">
       <h1 className="font-headline text-3xl font-bold text-foreground md:text-5xl">
-        Descubra Agora Como Você Pode Dormir Em Menos de <span className="text-primary">2 MINUTOS!</span>
+        Descubra Como o Método Sono Militar Faz Você Dormir em Menos de <span className="text-primary">2 MINUTOS</span>
       </h1>
       <Card className="border-0 bg-transparent shadow-none">
         <CardContent className="flex flex-col items-center justify-center space-y-6 p-4 md:space-y-8 md:p-6">
