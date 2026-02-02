@@ -44,8 +44,6 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
                 <p>❌ Sem mudar sua rotina</p>
               </div>
             </div>
-
-            <p className="text-2xl">👇</p>
           </div>
 
           <Button onClick={onStart} size="lg" className="w-full max-w-sm animate-pulse-cta text-lg font-bold">
