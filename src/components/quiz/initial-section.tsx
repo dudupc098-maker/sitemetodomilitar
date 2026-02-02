@@ -38,7 +38,7 @@ export default function InitialSection({ onStart }: InitialSectionProps) {
             </p>
 
             <div className="flex justify-center py-2">
-              <div className="space-y-1 text-left text-muted-foreground">
+              <div className="space-y-1 text-left text-foreground">
                 <p>❌ Sem remédios</p>
                 <p>❌ Sem técnicas complicadas</p>
                 <p>❌ Sem mudar sua rotina</p>
