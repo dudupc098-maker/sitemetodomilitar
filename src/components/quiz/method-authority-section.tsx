@@ -1,14 +1,8 @@
 'use client';
 
-import { BrainCircuit, ShieldCheck, Clock, UserCheck } from 'lucide-react';
+import { ShieldCheck, Clock, UserCheck } from 'lucide-react';
 
 const authorityPoints = [
-  {
-    icon: BrainCircuit,
-    title: 'Método Estruturado',
-    description:
-      'Uma sequência passo a passo que reprograma a resposta do seu corpo ao sono.',
-  },
   {
     icon: ShieldCheck,
     title: 'Sequência Comprovada',
@@ -32,7 +26,7 @@ const authorityPoints = [
 export default function MethodAuthoritySection() {
   return (
     <section className="animate-fade-in-up">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 md:grid-cols-3">
         {authorityPoints.map((point) => (
           <div key={point.title} className="rounded-xl border border-border/50 bg-card/50 p-6 text-center shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
             <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
