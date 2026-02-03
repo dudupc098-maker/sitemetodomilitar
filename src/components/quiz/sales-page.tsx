@@ -8,6 +8,7 @@ import { Button } from '../ui/button';
 import { ArrowLeft } from 'lucide-react';
 import MethodAuthoritySection from './method-authority-section';
 import WhatYouGetSection from './what-you-get-section';
+import BonusSection from './bonus-section';
 
 type SalesPageProps = {
   plan: PersonalizedSleepPlanOutput;
@@ -33,6 +34,7 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         <ResultsSection plan={plan} />
         <MethodAuthoritySection />
         <WhatYouGetSection />
+        <BonusSection />
       </div>
     </div>
   );
