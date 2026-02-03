@@ -2,6 +2,7 @@
 
 import { whatYouGetData } from '@/lib/what-you-get-data';
 import { CheckCircle2 } from 'lucide-react';
+import { Card } from '@/components/ui/card';
 
 export default function WhatYouGetSection() {
   return (
@@ -12,15 +13,19 @@ export default function WhatYouGetSection() {
         </h2>
       </div>
 
-      <div className="mx-auto mt-12 max-w-3xl space-y-4">
-        {whatYouGetData.map((item) => (
-          <div key={item.title} className="flex items-center gap-4 rounded-lg border bg-card/50 p-5 shadow-sm transition-all hover:border-primary/30 hover:bg-card">
-            <item.icon className="h-7 w-7 shrink-0 text-primary" />
-            <div>
-              <h3 className="text-lg font-bold text-card-foreground">{item.title}</h3>
-            </div>
-          </div>
-        ))}
+      <div className="mx-auto mt-12 max-w-3xl">
+        <Card className="overflow-hidden border-border/50 bg-card/30 shadow-lg">
+          <ul className="divide-y divide-border">
+            {whatYouGetData.map((item) => (
+              <li key={item.title} className="flex items-center gap-5 p-5 transition-colors hover:bg-card/50 md:p-6">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <item.icon className="h-7 w-7" />
+                </div>
+                <span className="text-lg font-medium text-card-foreground">{item.title}</span>
+              </li>
+            ))}
+          </ul>
+        </Card>
       </div>
       
       <div className="mt-8 flex items-center justify-center gap-2 text-center text-muted-foreground">
