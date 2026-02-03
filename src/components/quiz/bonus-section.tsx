@@ -25,10 +25,6 @@ export default function BonusSection() {
           </ul>
         </Card>
       </div>
-      
-      <div className="mt-8 text-center text-base text-muted-foreground">
-        <p>Todos os bônus são um <span className="font-bold text-foreground">presente</span> e já estão inclusos no seu acesso.</p>
-      </div>
     </section>
   );
 }
