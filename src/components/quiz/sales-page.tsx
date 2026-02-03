@@ -6,7 +6,6 @@ import { trackEvent } from '@/lib/analytics';
 import { useEffect } from 'react';
 import { Button } from '../ui/button';
 import { ArrowLeft } from 'lucide-react';
-import MethodAuthoritySection from './method-authority-section';
 import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
 
@@ -32,7 +31,6 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
       </Button>
       <div className="container mx-auto max-w-5xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
         <ResultsSection plan={plan} />
-        <MethodAuthoritySection />
         <WhatYouGetSection />
         <BonusSection />
       </div>
