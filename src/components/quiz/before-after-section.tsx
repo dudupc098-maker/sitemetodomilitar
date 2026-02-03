@@ -40,15 +40,15 @@ export default function BeforeAfterSection() {
           <ul className="space-y-3 text-left text-card-foreground">
             <li className="flex items-start gap-2 md:gap-3">
               <XCircle className="mt-1 h-5 w-5 shrink-0 text-destructive/80" />
-              <span className="text-sm md:text-base">Mente acelerada e ansiosa na hora de dormir.</span>
+              <span className="text-sm md:text-base">Mente acelerada</span>
             </li>
             <li className="flex items-start gap-2 md:gap-3">
               <XCircle className="mt-1 h-5 w-5 shrink-0 text-destructive/80" />
-              <span className="text-sm md:text-base">Acorda cansado, mesmo após "dormir" a noite toda.</span>
+              <span className="text-sm md:text-base">Acorda cansado</span>
             </li>
             <li className="flex items-start gap-2 md:gap-3">
                <XCircle className="mt-1 h-5 w-5 shrink-0 text-destructive/80" />
-              <span className="text-sm md:text-base">Frustração por não conseguir descansar de verdade.</span>
+              <span className="text-sm md:text-base">Nunca descansa de verdade</span>
             </li>
           </ul>
         </div>
@@ -73,15 +73,15 @@ export default function BeforeAfterSection() {
           <ul className="space-y-3 text-left text-card-foreground">
             <li className="flex items-start gap-2 md:gap-3">
               <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
-              <span className="text-sm md:text-base">Mente calma ao deitar.</span>
+              <span className="text-sm md:text-base">Mente calma</span>
             </li>
             <li className="flex items-start gap-2 md:gap-3">
               <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
-              <span className="text-sm md:text-base">Acorda descansado e com energia.</span>
+              <span className="text-sm md:text-base">Acorda com energia</span>
             </li>
             <li className="flex items-start gap-2 md:gap-3">
               <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
-              <span className="text-sm md:text-base">Sensação de controle e tranquilidade ao acordar.</span>
+              <span className="text-sm md:text-base">Sono profundo e restaurador</span>
             </li>
           </ul>
         </div>
