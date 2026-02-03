@@ -13,8 +13,8 @@ export default function WhatYouGetSection() {
       </div>
 
       <div className="mx-auto mt-12 max-w-3xl">
-        <Card className="overflow-hidden border-border/50 bg-card/30 shadow-lg">
-          <ul className="divide-y divide-border">
+        <Card className="overflow-hidden border-2 border-primary/20 bg-card/30 shadow-lg">
+          <ul className="divide-y divide-primary/20">
             {whatYouGetData.map((item) => (
               <li key={item.title} className="flex items-center gap-4 p-5 transition-colors hover:bg-card/50 md:p-6">
                 <span className="text-2xl">✅</span>
