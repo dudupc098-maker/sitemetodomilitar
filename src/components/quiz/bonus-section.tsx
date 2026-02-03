@@ -20,12 +20,9 @@ export default function BonusSection() {
         <Card className="overflow-hidden border-2 border-primary/20 bg-card/50 shadow-lg">
           <ul className="divide-y divide-border/50">
             {bonusData.map((item) => (
-              <li key={item.title} className="flex items-start gap-5 p-6 transition-colors hover:bg-card/70 md:p-8">
-                <span className="mt-1 text-2xl" role="img" aria-label="gift emoji">🎁</span>
-                <div>
-                  <h3 className="text-lg font-bold text-card-foreground">{item.title}</h3>
-                  <p className="mt-1 text-base text-muted-foreground">{item.description}</p>
-                </div>
+              <li key={item.title} className="flex items-center gap-5 p-6 transition-colors hover:bg-card/70 md:p-8">
+                <span className="text-2xl" role="img" aria-label="gift emoji">🎁</span>
+                <h3 className="text-lg font-bold text-card-foreground">{item.title}</h3>
               </li>
             ))}
           </ul>
