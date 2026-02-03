@@ -8,6 +8,7 @@ import { Button } from '../ui/button';
 import { ArrowLeft } from 'lucide-react';
 import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
+import BeforeAfterSection from './before-after-section';
 
 type SalesPageProps = {
   plan: PersonalizedSleepPlanOutput;
@@ -31,6 +32,7 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
       </Button>
       <div className="container mx-auto max-w-5xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
         <ResultsSection plan={plan} />
+        <BeforeAfterSection />
         <WhatYouGetSection />
         <BonusSection />
       </div>
