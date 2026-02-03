@@ -9,7 +9,7 @@ export default function BonusSection() {
       <div className="text-center">
         <p className="font-semibold text-primary">BÔNUS EXCLUSIVOS</p>
         <h2 className="mt-2 font-headline text-3xl font-bold md:text-4xl">
-          E ainda, receba <span className="text-primary">5 bônus exclusivos</span> hoje
+          E ainda, garanta <span className="text-primary">5 bônus exclusivos</span> hoje!
         </h2>
         <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
           Ferramentas práticas para acelerar e facilitar a aplicação do Método Sono Militar.
