@@ -10,9 +10,6 @@ export default function WhatYouGetSection() {
         <h2 className="font-headline text-3xl font-bold md:text-4xl">
           O que você vai receber
         </h2>
-        <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
-          Acesso imediato a um conjunto de ferramentas validadas para reprogramar seu sono.
-        </p>
       </div>
 
       <div className="mx-auto mt-12 max-w-3xl space-y-4">
