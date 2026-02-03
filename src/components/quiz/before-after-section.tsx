@@ -14,9 +14,6 @@ export default function BeforeAfterSection() {
         <h2 className="font-headline text-3xl font-bold md:text-4xl">
           Sua transformação começa hoje
         </h2>
-        <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
-          De noites frustrantes a manhãs com energia e controle.
-        </p>
       </div>
 
       <div className="mt-12 grid grid-cols-2 gap-4">
