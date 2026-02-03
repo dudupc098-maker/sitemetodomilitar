@@ -17,10 +17,8 @@ export default function WhatYouGetSection() {
         <Card className="overflow-hidden border-border/50 bg-card/30 shadow-lg">
           <ul className="divide-y divide-border">
             {whatYouGetData.map((item) => (
-              <li key={item.title} className="flex items-center gap-5 p-5 transition-colors hover:bg-card/50 md:p-6">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <item.icon className="h-7 w-7" />
-                </div>
+              <li key={item.title} className="flex items-center gap-4 p-5 transition-colors hover:bg-card/50 md:p-6">
+                <span className="text-2xl">✅</span>
                 <span className="text-lg font-medium text-card-foreground">{item.title}</span>
               </li>
             ))}
