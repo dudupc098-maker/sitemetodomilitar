@@ -5,7 +5,7 @@ import ResultsSection from './results-section';
 import { trackEvent } from '@/lib/analytics';
 import { useEffect } from 'react';
 import { Button } from '../ui/button';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Info } from 'lucide-react';
 import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
 import BeforeAfterSection from './before-after-section';
@@ -35,7 +35,13 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         <BeforeAfterSection />
         <WhatYouGetSection />
         <BonusSection />
-        <div className="text-center">
+        <div className="flex flex-col items-center gap-6 text-center">
+            <div className="flex w-full max-w-md items-start gap-3 rounded-lg border border-primary/20 bg-primary/5 p-4 text-left">
+                <Info className="mt-0.5 h-5 w-5 shrink-0 text-primary/80" />
+                <p className="text-sm text-foreground/90">
+                    Esses bônus foram criados para acelerar sua adaptação ao Método Sono Militar e facilitar seus primeiros resultados. <strong>Disponíveis somente hoje.</strong>
+                </p>
+            </div>
             <Button size="lg" className="w-full max-w-md animate-pulse-cta text-lg font-bold">
                 QUERO MEUS 5 BÔNUS EXCLUSIVOS!
             </Button>
