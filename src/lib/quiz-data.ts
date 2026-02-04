@@ -1,4 +1,4 @@
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ShieldCheck, RefreshCw } from 'lucide-react';
 
 export const quizData = {
   totalQuestions: 6,
@@ -116,4 +116,30 @@ export const quizData = {
       imageUrlId: 'testimonial-avatar-3',
     },
   ],
+  plans: {
+    pro: {
+        priceVariants: ['37,00', '47,00', '57,00'],
+        originalPrice: '197,00',
+        features: [
+            'Acesso vitalício ao Método Sono Militar',
+            '5 Bônus Exclusivos (hoje)',
+            'Comunidade de membros',
+            'Suporte individual',
+            'Garantia de 7 dias'
+        ]
+    },
+    basic: {
+        price: 19.90,
+        features: [
+            'Ebook "O Código do Sono"',
+            'Checklist Diário do Sono',
+            'Acesso limitado por 1 ano'
+        ]
+    }
+  },
+  guarantees: [
+      { icon: ShieldCheck, text: '7 Dias de Garantia' },
+      { icon: CheckCircle, text: 'Compra Segura' },
+      { icon: RefreshCw, text: 'Acesso Imediato' }
+  ]
 };

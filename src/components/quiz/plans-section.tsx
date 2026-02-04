@@ -28,7 +28,7 @@ export default function PlansSection() {
     }
 
   return (
-    <section id="plans">
+    <section id="plans" className="scroll-mt-24">
       <div className="text-center">
         <h2 className="font-headline text-3xl font-bold md:text-4xl">
           Escolha o seu plano e comece hoje

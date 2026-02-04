@@ -10,6 +10,7 @@ import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
 import BeforeAfterSection from './before-after-section';
 import TestimonialsSection from './testimonials-section';
+import PlansSection from './plans-section';
 
 type SalesPageProps = {
   plan: PersonalizedSleepPlanOutput;
@@ -34,7 +35,6 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
       <div className="container mx-auto max-w-5xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
         <ResultsSection plan={plan} />
         <BeforeAfterSection />
-        <TestimonialsSection />
         <WhatYouGetSection />
         <div className="space-y-6">
           <BonusSection />
@@ -45,11 +45,22 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
                       Esses bônus foram criados para acelerar sua adaptação ao Método Sono Militar e facilitar seus primeiros resultados. <strong>Disponíveis somente hoje.</strong>
                   </p>
               </div>
-              <Button size="lg" className="w-full max-w-md animate-pulse-cta text-lg font-bold">
-                  QUERO MEUS 5 BÔNUS EXCLUSIVOS!
-              </Button>
+              <a href="#testimonials" className="w-full max-w-md">
+                <Button size="lg" className="w-full animate-pulse-cta text-lg font-bold">
+                    QUERO MEUS 5 BÔNUS EXCLUSIVOS!
+                </Button>
+              </a>
           </div>
         </div>
+        <TestimonialsSection />
+        <div className="text-center">
+            <a href="#plans" className="w-full max-w-md">
+                <Button size="lg" className="w-full max-w-md animate-pulse-cta text-lg font-bold">
+                    SIM, QUERO ACORDAR COM ENERGIA
+                </Button>
+            </a>
+        </div>
+        <PlansSection />
       </div>
     </div>
   );

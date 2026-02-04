@@ -8,7 +8,7 @@ import { BadgeCheck } from 'lucide-react';
 
 export default function TestimonialsSection() {
     return (
-      <section className="w-full animate-fade-in-up">
+      <section id="testimonials" className="w-full animate-fade-in-up scroll-mt-24">
         <div className="text-center">
           <h2 className="font-headline text-2xl font-bold leading-tight md:text-3xl">
             Eles voltaram a dormir profundo em poucos dias. Agora é a sua vez de dormir!
