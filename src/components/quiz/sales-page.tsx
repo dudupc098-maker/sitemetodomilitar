@@ -10,7 +10,6 @@ import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
 import BeforeAfterSection from './before-after-section';
 import TestimonialsSection from './testimonials-section';
-import PlansSection from './plans-section';
 
 type SalesPageProps = {
   plan: PersonalizedSleepPlanOutput;
@@ -53,14 +52,6 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
           </div>
         </div>
         <TestimonialsSection />
-        <div className="text-center">
-            <a href="#plans" className="w-full max-w-md">
-                <Button size="lg" className="w-full max-w-md animate-pulse-cta text-lg font-bold">
-                    QUERO DORMIR MELHOR TAMBÉM
-                </Button>
-            </a>
-        </div>
-        <PlansSection />
       </div>
     </div>
   );
