@@ -10,6 +10,7 @@ import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
 import BeforeAfterSection from './before-after-section';
 import TestimonialsSection from './testimonials-section';
+import PlansSection from './plans-section';
 
 type SalesPageProps = {
   plan: PersonalizedSleepPlanOutput;
@@ -44,7 +45,7 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
                       Esses bônus foram criados para acelerar sua adaptação ao Método Sono Militar e facilitar seus primeiros resultados. <strong>Disponíveis somente hoje.</strong>
                   </p>
               </div>
-              <a href="#testimonials" className="w-full max-w-md">
+              <a href="#pricing" className="w-full max-w-md">
                 <Button size="lg" className="w-full animate-pulse-cta text-lg font-bold">
                     QUERO MEUS 5 BÔNUS EXCLUSIVOS!
                 </Button>
@@ -52,6 +53,7 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
           </div>
         </div>
         <TestimonialsSection />
+        <PlansSection />
       </div>
     </div>
   );

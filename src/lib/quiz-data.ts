@@ -116,25 +116,20 @@ export const quizData = {
       imageUrlId: 'testimonial-avatar-3',
     },
   ],
-  plans: {
-    pro: {
-        priceVariants: ['37,00', '47,00', '57,00'],
-        originalPrice: '197,00',
-        features: [
-            'Acesso vitalício ao Método Sono Militar',
-            '5 Bônus Exclusivos (hoje)',
-            'Comunidade de membros',
-            'Suporte individual',
-            'Garantia de 7 dias'
-        ]
-    },
-    basic: {
-        price: 19.90,
-        features: [
-            'Ebook "O Código do Sono"',
-            'Checklist Diário do Sono',
-            'Acesso limitado por 1 ano'
-        ]
+  pricing: {
+    main: {
+      name: 'Método Sono Militar',
+      price: '37,00',
+      originalPrice: '97,00',
+      ctaText: 'QUERO DORMIR BEM POR R$37',
+      features: [
+        'Acesso Vitalício ao Método Sono Militar',
+        '15+ Aulas em Vídeo (Acesso Imediato)',
+        'Ebook "O Código do Sono"',
+        'Todos os 5 Bônus Exclusivos (Disponíveis Hoje)',
+        'Comunidade de Membros',
+        'Suporte Personalizado'
+      ]
     }
   },
   guarantees: [
