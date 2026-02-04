@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { quizData } from '@/lib/quiz-data';
@@ -9,40 +8,41 @@ import { BadgeCheck } from 'lucide-react';
 
 export default function TestimonialsSection() {
     return (
-      <section>
+      <section className="w-full animate-fade-in-up">
         <div className="text-center">
-          <h2 className="font-headline text-3xl font-bold md:text-4xl">
-            Resultados Reais — Pessoas Reais
+          <h2 className="font-headline text-2xl font-bold leading-tight md:text-3xl">
+            Eles voltaram a dormir profundo em poucos dias. Agora é a sua vez de dormir!
           </h2>
-          <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
-            Veja quem já recuperou noites profundas com o Método Sono Militar.
+          <p className="mx-auto mt-3 max-w-3xl text-base text-muted-foreground md:text-lg">
+            Relatos reais de pessoas que transformaram suas noites com o Método Sono Militar.
           </p>
         </div>
   
-        <div className="mt-12 grid gap-8 lg:grid-cols-3">
+        <div className="mx-auto mt-12 grid grid-cols-1 gap-6 md:max-w-5xl md:grid-cols-3">
           {quizData.testimonials.map((testimonial) => {
             const image = PlaceHolderImages.find((img) => img.id === testimonial.imageUrlId);
             return (
-              <Card key={testimonial.id} className="flex flex-col bg-card/80">
+              <Card key={testimonial.id} className="flex flex-col overflow-hidden bg-card/50 shadow-sm transition-all hover:shadow-md">
                 <CardHeader>
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-3">
                     <Avatar className='h-12 w-12'>
                       {image && (
-                          <AvatarImage src={image.imageUrl} alt={testimonial.name} data-ai-hint={image.imageHint} />
+                          <AvatarImage src={image.imageUrl} alt={`Foto de ${testimonial.name}, ${testimonial.tag}`} data-ai-hint={image.imageHint} />
                       )}
                       <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                     <div>
-                      <div className="flex items-center gap-1.5">
-                        <p className="font-semibold">{testimonial.name}</p>
-                        <BadgeCheck className="h-5 w-5 text-primary" />
-                      </div>
-                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.tag}</p>
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="flex-1">
-                  <p className="italic text-muted-foreground">"{testimonial.text}"</p>
+                <CardContent className="flex flex-1 flex-col pt-0">
+                  <p className="flex-1 text-base italic leading-relaxed text-foreground/80">"{testimonial.text}"</p>
+                   <div className="mt-4 flex items-center gap-1.5 text-primary">
+                        <BadgeCheck className="h-5 w-5" />
+                        <span className="text-sm font-medium">Participante validado</span>
+                    </div>
                 </CardContent>
               </Card>
             );

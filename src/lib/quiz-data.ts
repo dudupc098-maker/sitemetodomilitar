@@ -93,4 +93,27 @@ export const quizData = {
     'Preparando o diagnóstico que coloca você no 1% que dorme profundamente...',
     'Seu plano personalizado está quase pronto!',
   ],
+  testimonials: [
+    {
+      id: 'testimonial-1',
+      text: 'Em 4 dias minha mente parou de rodar à noite; agora eu apago com calma e acordo menos cansado.',
+      name: 'Mariana',
+      tag: '34, professora (SP)',
+      imageUrlId: 'testimonial-avatar-1',
+    },
+    {
+      id: 'testimonial-2',
+      text: 'Segui a rotina guiada e já na primeira semana percebi diferença: menos tempo para pegar no sono.',
+      name: 'Ricardo',
+      tag: '39, analista (RJ)',
+      imageUrlId: 'testimonial-avatar-2',
+    },
+    {
+      id: 'testimonial-3',
+      text: 'Trabalho em turnos e pensei que não funcionaria — mas o ajuste pro meu horário fez a diferença.',
+      name: 'Carla',
+      tag: '28, enfermeira (BH)',
+      imageUrlId: 'testimonial-avatar-3',
+    },
+  ],
 };

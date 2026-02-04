@@ -9,6 +9,7 @@ import { ArrowLeft, Info } from 'lucide-react';
 import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
 import BeforeAfterSection from './before-after-section';
+import TestimonialsSection from './testimonials-section';
 
 type SalesPageProps = {
   plan: PersonalizedSleepPlanOutput;
@@ -33,8 +34,9 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
       <div className="container mx-auto max-w-5xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
         <ResultsSection plan={plan} />
         <BeforeAfterSection />
+        <TestimonialsSection />
         <WhatYouGetSection />
-        <div className="space-y-12">
+        <div className="space-y-6">
           <BonusSection />
           <div className="flex flex-col items-center gap-6 text-center">
               <div className="flex w-full max-w-md items-start gap-3 rounded-lg border border-primary/20 bg-primary/5 p-4 text-left">
