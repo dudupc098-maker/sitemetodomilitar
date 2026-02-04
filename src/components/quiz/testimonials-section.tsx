@@ -4,7 +4,6 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { quizData } from '@/lib/quiz-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { BadgeCheck } from 'lucide-react';
 
 export default function TestimonialsSection() {
     return (
@@ -39,10 +38,6 @@ export default function TestimonialsSection() {
                 </CardHeader>
                 <CardContent className="flex flex-1 flex-col pt-0">
                   <p className="flex-1 text-base italic leading-relaxed text-foreground/80">"{testimonial.text}"</p>
-                   <div className="mt-4 flex items-center gap-1.5 text-primary">
-                        <BadgeCheck className="h-5 w-5" />
-                        <span className="text-sm font-medium">Participante validado</span>
-                    </div>
                 </CardContent>
               </Card>
             );
