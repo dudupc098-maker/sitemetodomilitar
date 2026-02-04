@@ -56,7 +56,7 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         <div className="text-center">
             <a href="#plans" className="w-full max-w-md">
                 <Button size="lg" className="w-full max-w-md animate-pulse-cta text-lg font-bold">
-                    SIM, QUERO ACORDAR COM ENERGIA
+                    QUERO DORMIR MELHOR TAMBÉM
                 </Button>
             </a>
         </div>
