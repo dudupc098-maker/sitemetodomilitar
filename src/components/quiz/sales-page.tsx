@@ -37,7 +37,7 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         <BonusSection />
         <div className="text-center">
             <Button size="lg" className="w-full max-w-md animate-pulse-cta text-lg font-bold">
-                QUERO MEUS 2 BÔNUS EXCLUSIVOS
+                QUERO MEUS 5 BÔNUS EXCLUSIVOS!
             </Button>
         </div>
       </div>
