@@ -57,7 +57,7 @@ export default function PlansSection() {
                 <span className="text-xl font-medium line-through">De R${plan.originalPrice}</span>
             </div>
             <p className="mt-6 text-lg text-gray-300">Por apenas</p>
-            <p className="text-7xl font-bold tracking-tighter">R${plan.price}</p>
+            <p className="text-6xl font-bold tracking-tighter text-green-500 sm:text-7xl">R${plan.price}</p>
         </div>
 
         <Button 
