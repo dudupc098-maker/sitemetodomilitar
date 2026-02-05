@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { quizData } from '@/lib/quiz-data';
 import { Check } from 'lucide-react';
 import { trackEvent } from '@/lib/analytics';
@@ -33,9 +33,6 @@ export default function PlansSection() {
             </div>
             <CardHeader className="pt-10 text-center">
                 <CardTitle className="font-headline text-3xl">{plan.name}</CardTitle>
-                <CardDescription>
-                    A solução completa para noites de sono restauradoras.
-                </CardDescription>
                 <div className="flex items-baseline justify-center gap-3 pt-4">
                     <span className="text-5xl font-bold text-foreground">R${plan.price}</span>
                     <span className="text-xl font-medium text-muted-foreground line-through">R${plan.originalPrice}</span>
