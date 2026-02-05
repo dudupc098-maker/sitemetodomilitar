@@ -57,13 +57,13 @@ export default function PlansSection() {
                 <span className="text-xl font-medium line-through">De R${plan.originalPrice}</span>
             </div>
             <p className="mt-6 text-lg text-gray-300">Por apenas</p>
-            <p className="text-6xl font-bold tracking-tighter text-[#22c55e] sm:text-7xl">R${plan.price}</p>
+            <p className="text-7xl font-bold tracking-tighter text-[#22c55e]">R$37,00</p>
         </div>
 
         <div className="mt-8 flex justify-center">
             <Button 
                 size="lg" 
-                className="bg-green-500 hover:bg-green-600 text-xl font-bold text-white h-16 shadow-lg shadow-green-500/30 px-12"
+                className="rounded-full bg-green-500 hover:bg-green-600 text-xl font-bold text-white h-16 shadow-md px-12"
                 onClick={handleCtaClick}
             >
                 QUERO DORMIR MELHOR AGORA
