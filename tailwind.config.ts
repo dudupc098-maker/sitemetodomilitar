@@ -89,17 +89,11 @@ export default {
           },
         },
         'pulse-cta': {
-          '0%': {
+          '0%, 100%': {
             transform: 'scale(1)',
-            boxShadow: '0 0 0 0 hsla(var(--warning), 0.7)',
           },
-          '70%': {
-            transform: 'scale(1.02)',
-            boxShadow: '0 0 0 10px hsla(var(--warning), 0)',
-          },
-          '100%': {
-            transform: 'scale(1)',
-            boxShadow: '0 0 0 0 hsla(var(--warning), 0)',
+          '50%': {
+            transform: 'scale(1.05)',
           },
         },
       },
