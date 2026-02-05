@@ -58,7 +58,6 @@ export default function PlansSection() {
             </div>
             <p className="mt-6 text-lg text-gray-300">Por apenas</p>
             <p className="text-8xl font-bold tracking-tighter">R${plan.price}</p>
-            <p className="mt-1 text-lg text-gray-300">pagamento único</p>
         </div>
 
         <Button 
