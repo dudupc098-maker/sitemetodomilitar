@@ -17,7 +17,7 @@ export default function PlansSection() {
 
   return (
     <section id="pricing" className="w-full scroll-mt-24 animate-fade-in-up py-16 bg-background">
-      <div className="mx-auto max-w-sm sm:max-w-md rounded-2xl bg-black p-6 sm:p-8 text-white shadow-2xl">
+      <div className="mx-auto max-w-md sm:max-w-lg rounded-2xl bg-black p-6 sm:p-8 text-white shadow-2xl">
         
         <div className="text-center">
             <div className="inline-block rounded-md bg-yellow-400 px-3 py-1 text-sm font-bold uppercase text-black tracking-wider">
