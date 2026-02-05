@@ -37,7 +37,6 @@ export default function PlansSection() {
                     <span className="text-5xl font-bold text-foreground">R${plan.price}</span>
                     <span className="text-xl font-medium text-muted-foreground line-through">R${plan.originalPrice}</span>
                 </div>
-                 <p className="text-sm font-medium text-accent">Pagamento único. Acesso vitalício.</p>
             </CardHeader>
             <CardContent className="space-y-3 px-8 pb-6">
                 <div className="w-full text-left text-base font-semibold text-card-foreground">O que você recebe:</div>
