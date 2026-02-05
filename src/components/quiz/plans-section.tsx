@@ -65,7 +65,7 @@ export default function PlansSection() {
         <div className="mt-4 flex justify-center">
             <Button 
                 size="lg" 
-                className="rounded-full bg-[#02990e] hover:bg-[#02990e]/90 text-xl font-bold text-white h-16 shadow-md px-8"
+                className="rounded-full bg-[#02990e] hover:bg-[#02990e]/90 text-xl font-bold text-white h-16 shadow-md px-8 animate-pulse-cta"
                 onClick={handleCtaClick}
             >
                 QUERO DORMIR MELHOR AGORA
