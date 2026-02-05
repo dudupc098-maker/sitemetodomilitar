@@ -17,7 +17,7 @@ export default function PlansSection() {
 
   return (
     <section id="pricing" className="w-full scroll-mt-24 animate-fade-in-up py-16 bg-background">
-      <div className="mx-auto max-w-md sm:max-w-lg rounded-2xl bg-black p-6 sm:p-8 text-white shadow-2xl">
+      <div className="mx-auto max-w-lg sm:max-w-xl rounded-2xl bg-black p-6 sm:p-8 text-white shadow-2xl">
         
         <div className="text-center">
             <div className="inline-block rounded-md bg-yellow-400 px-3 py-1 text-sm font-bold uppercase text-black tracking-wider">
@@ -60,13 +60,15 @@ export default function PlansSection() {
             <p className="text-6xl font-bold tracking-tighter text-[#22c55e] sm:text-7xl">R${plan.price}</p>
         </div>
 
-        <Button 
-            size="lg" 
-            className="mt-8 w-full bg-green-500 hover:bg-green-600 text-xl font-bold text-white h-16 shadow-lg shadow-green-500/30"
-            onClick={handleCtaClick}
-        >
-            QUERO DORMIR MELHOR AGORA
-        </Button>
+        <div className="mt-8 flex justify-center">
+            <Button 
+                size="lg" 
+                className="bg-green-500 hover:bg-green-600 text-xl font-bold text-white h-16 shadow-lg shadow-green-500/30 px-12"
+                onClick={handleCtaClick}
+            >
+                QUERO DORMIR MELHOR AGORA
+            </Button>
+        </div>
         
         <div className="mt-10 flex flex-col items-center justify-center gap-6 text-center sm:flex-row sm:gap-8">
             {quizData.guarantees.map((guarantee, index) => (
