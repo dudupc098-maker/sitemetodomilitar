@@ -123,7 +123,7 @@ export const quizData = {
       originalPrice: '97,00',
       ctaText: 'QUERO DORMIR BEM POR R$37',
       features: [
-        'Acesso Vitalício ao Método Sono Militar',
+        'Área de Membros Premium Estilo Netflix',
         '15+ Aulas em Vídeo (Acesso Imediato)',
         'Ebook "O Código do Sono"',
         'Todos os 5 Bônus Exclusivos (Disponíveis Hoje)',
