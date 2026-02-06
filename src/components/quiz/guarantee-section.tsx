@@ -23,9 +23,6 @@ export default function GuaranteeSection() {
               />
             </div>
           )}
-          <p className="text-lg text-muted-foreground">
-            Se não sentir melhora, devolvemos 100% do seu dinheiro.
-          </p>
           <p className="max-w-prose pt-2 text-base text-foreground/80">
             Confiamos tanto no conteúdo que entregamos, que se não fizer sentido para você, pode pedir seu dinheiro de volta em até 7 dias. Simples assim, RISCO ZERO.
           </p>
