@@ -23,9 +23,6 @@ export default function GuaranteeSection() {
               />
             </div>
           )}
-          <h2 className="font-headline text-2xl font-bold text-foreground md:text-3xl">
-            Teste sem risco por 7 dias
-          </h2>
           <p className="text-lg text-muted-foreground">
             Se não sentir melhora, devolvemos 100% do seu dinheiro.
           </p>
