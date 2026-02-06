@@ -128,7 +128,8 @@ export const quizData = {
         'Ebook "O Código do Sono"',
         'Todos os 5 Bônus Exclusivos (Disponíveis Hoje)',
         'Comunidade de Membros',
-        'Suporte Personalizado'
+        'Suporte Personalizado',
+        'Acesso Imediato Pelo Celular'
       ]
     }
   },
