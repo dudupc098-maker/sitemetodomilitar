@@ -30,10 +30,7 @@ export default function GuaranteeSection() {
             Se não sentir melhora, devolvemos 100% do seu dinheiro.
           </p>
           <p className="max-w-prose pt-2 text-base text-foreground/80">
-            Você tem 7 dias completos para testar o Método Sono Militar. Se por
-            qualquer motivo não ficar satisfeito, basta solicitar e
-            reembolsamos 100% do valor, sem perguntas e sem burocracia. O risco
-            é totalmente nosso.
+            Confiamos tanto no conteúdo que entregamos, que se não fizer sentido para você, pode pedir seu dinheiro de volta em até 7 dias. Simples assim, RISCO ZERO.
           </p>
         </div>
       </Card>
