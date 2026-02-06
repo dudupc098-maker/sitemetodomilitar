@@ -12,12 +12,9 @@ export default function FaqSection() {
   return (
     <section className="w-full animate-fade-in-up">
       <div className="mx-auto max-w-4xl text-center">
-        <h2 className="font-headline text-xl font-bold md:text-2xl">
-          Dúvidas comuns antes de começar
+        <h2 className="font-headline text-3xl font-bold md:text-4xl">
+          PERGUNTAS FREQUENTES
         </h2>
-        <p className="mt-2 text-muted-foreground">
-          Respostas rápidas e transparentes para você decidir com segurança.
-        </p>
       </div>
       <div className="mx-auto mt-8 max-w-3xl">
         <Accordion type="single" collapsible className="w-full">
