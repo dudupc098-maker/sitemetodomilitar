@@ -9,7 +9,6 @@ import { ArrowLeft, Info } from 'lucide-react';
 import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
 import BeforeAfterSection from './before-after-section';
-import TestimonialsSection from './testimonials-section';
 import PlansSection from './plans-section';
 
 type SalesPageProps = {
@@ -52,7 +51,6 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
               </a>
           </div>
         </div>
-        <TestimonialsSection />
         <PlansSection />
       </div>
     </div>
