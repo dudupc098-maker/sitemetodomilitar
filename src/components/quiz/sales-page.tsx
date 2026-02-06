@@ -10,6 +10,7 @@ import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
 import BeforeAfterSection from './before-after-section';
 import PlansSection from './plans-section';
+import GuaranteeSection from './guarantee-section';
 
 type SalesPageProps = {
   plan: PersonalizedSleepPlanOutput;
@@ -52,6 +53,7 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
           </div>
         </div>
         <PlansSection />
+        <GuaranteeSection />
       </div>
     </div>
   );
