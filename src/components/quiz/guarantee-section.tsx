@@ -13,7 +13,7 @@ export default function GuaranteeSection() {
       <Card className="mx-auto max-w-2xl border-green-500/20 bg-card/40 p-6 text-center shadow-lg shadow-green-500/10 sm:p-8">
         <div className="flex flex-col items-center space-y-4">
           {guaranteeImage && (
-            <div className="relative h-24 w-64">
+            <div className="relative h-32 w-80">
               <Image
                 src={guaranteeImage.imageUrl}
                 alt={guaranteeImage.description}
