@@ -11,8 +11,7 @@ export default function PlansSection() {
 
     const handleCtaClick = () => {
         trackEvent('purchase_completed', { price: plan.price });
-        // In a real app, this would redirect to a checkout page.
-        console.log('Redirecting to checkout for price:', plan.price);
+        window.location.href = 'https://pay.cakto.com.br/3cay6bo_559317';
     }
 
   return (
