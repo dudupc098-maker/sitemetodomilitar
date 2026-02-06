@@ -129,7 +129,7 @@ export const quizData = {
         'Todos os 5 Bônus Exclusivos (Disponíveis Hoje)',
         'Comunidade de Membros',
         'Suporte Personalizado',
-        'Acesso Imediato Pelo Celular'
+        'Acesso Imediato Pelo Email'
       ]
     }
   },
