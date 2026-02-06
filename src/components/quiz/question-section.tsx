@@ -144,19 +144,20 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
                             group/option relative flex w-full items-center text-left
                             h-auto min-h-[56px]
                             px-[18px] py-4
-                            rounded-[14px] border
+                            rounded-[14px]
+                            border border-black/5 dark:border-white/5
                             bg-card text-card-foreground
                             text-[15px] font-medium leading-snug
                             cursor-pointer
-                            transition-all duration-[180ms] ease-[cubic-bezier(.2,.9,.3,1)]
-                            shadow-[0_6px_18px_rgba(16,24,40,0.06)] dark:shadow-[0_4px_10px_rgba(2,6,23,0.6)]
-                            border-[rgba(31,41,55,0.06)] dark:border-[rgba(255,255,255,0.04)]
-                            hover:-translate-y-[3px] hover:scale-[1.001] hover:shadow-[0_10px_24px_rgba(16,24,40,0.08)]
-                            focus-visible:outline-none focus-visible:shadow-[0_0_0_4px_rgba(30,58,95,0.12)]
-                            active:scale-[0.998]
+                            transition-all duration-150
+                            shadow-[0_2px_4px_rgba(0,0,0,0.04),0_1px_0_rgba(0,0,0,0.05)]
+                            dark:shadow-[0_2px_4px_rgba(0,0,0,0.2),0_1px_0_rgba(255,255,255,0.1)]
+                            hover:bg-secondary
+                            active:translate-y-px
+                            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
                             disabled:cursor-wait disabled:opacity-80
                             ${isSelected
-                                ? 'is-selected border-primary shadow-[0_8px_24px_rgba(30,58,95,0.08)] bg-gradient-to-b from-[rgba(30,58,95,0.03)] to-card dark:from-[rgba(30,58,95,0.06)]'
+                                ? 'is-selected !border-primary ring-1 ring-primary'
                                 : ''
                             }
                         `}
