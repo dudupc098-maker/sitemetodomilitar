@@ -9,8 +9,8 @@ export default function GuaranteeSection() {
     (img) => img.id === 'guarantee-seal'
   );
   return (
-    <section className="w-full animate-fade-in-up py-16">
-      <Card className="mx-auto max-w-2xl border-green-500/20 bg-card/40 p-6 text-center shadow-lg shadow-green-500/10 sm:p-8">
+    <section className="w-full animate-fade-in-up py-16 pt-4">
+      <Card className="mx-auto max-w-4xl border-green-500/20 bg-card/40 p-6 text-center shadow-lg shadow-green-500/10 sm:p-8">
         <div className="flex flex-col items-center space-y-4">
           {guaranteeImage && (
             <div className="relative h-64 w-[32rem]">
@@ -24,7 +24,11 @@ export default function GuaranteeSection() {
             </div>
           )}
           <p className="max-w-prose pt-2 text-base text-foreground/80">
-            Confiamos tanto no conteúdo que entregamos, que se não fizer sentido para você, <span className="font-semibold text-primary">pode pedir seu dinheiro de volta em até 7 dias</span>. Simples assim, RISCO ZERO.
+            Confiamos tanto no conteúdo que entregamos, que se não fizer sentido para você,{' '}
+            <span className="font-semibold text-primary">
+              pode pedir seu dinheiro de volta em até 7 dias
+            </span>
+            . Simples assim, RISCO ZERO.
           </p>
         </div>
       </Card>
