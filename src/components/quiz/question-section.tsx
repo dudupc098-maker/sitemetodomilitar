@@ -130,7 +130,7 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
         </CardHeader>
         
         <CardContent>
-          <div className="grid grid-cols-1 gap-3">
+          <div className="grid grid-cols-1 gap-4">
             {question.options.map((option) => {
                 const isSelected = selectedValue === option.value;
                 return (
@@ -145,20 +145,18 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
                             h-auto min-h-[56px]
                             px-[18px] py-4
                             rounded-[14px]
-                            border border-black/5 dark:border-white/5
+                            border-b-4 border-primary/40
                             bg-card text-card-foreground
                             text-[15px] font-medium leading-snug
                             cursor-pointer
                             transition-all duration-150
-                            shadow-[0_2px_4px_rgba(0,0,0,0.04),0_1px_0_rgba(0,0,0,0.05)]
-                            dark:shadow-[0_2px_4px_rgba(0,0,0,0.2),0_1px_0_rgba(255,255,255,0.1)]
-                            hover:bg-secondary
-                            active:translate-y-px
+                            active:translate-y-0.5 active:border-b-2
+                            hover:brightness-105
                             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
                             disabled:cursor-wait disabled:opacity-80
                             ${isSelected
                                 ? 'is-selected !border-primary ring-1 ring-primary'
-                                : ''
+                               : ''
                             }
                         `}
                     >
@@ -167,7 +165,7 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
                             className={`
                                 h-5 w-5 shrink-0 text-primary
                                 transition-all duration-[180ms] ease-[cubic-bezier(.2,.9,.3,1)]
-                                ${isSelected ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-1'}
+                                ${isSelected ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1'}
                             `}
                         />
                     </button>
