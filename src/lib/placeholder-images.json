@@ -65,6 +65,12 @@
       "description": "A mesma pessoa com aparência calma e descansada pela manhã.",
       "imageUrl": "https://i.imgur.com/ocPbquC.png",
       "imageHint": "rested woman"
+    },
+    {
+      "id": "guarantee-seal",
+      "description": "Selo de garantia de 7 dias.",
+      "imageUrl": "https://i.imgur.com/1I5uG3g.png",
+      "imageHint": "guarantee seal"
     }
   ]
 }
