@@ -57,10 +57,10 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         <div className="space-y-8 md:space-y-10">
           <GuaranteeSection />
           <div className="flex justify-center text-center">
-            <a href="https://pay.cakto.com.br/3cay6bo_559317" className="w-full max-w-lg">
-                <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
-                    QUERO DORMIR MELHOR AGORA
-                </Button>
+            <a href="#pricing" className="w-full max-w-lg">
+              <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
+                QUERO DORMIR MELHOR AGORA
+              </Button>
             </a>
           </div>
           <FaqSection />
