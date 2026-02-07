@@ -63,13 +63,6 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         <PlansSection />
         <div className="space-y-2">
           <GuaranteeSection />
-          <div className="flex justify-center text-center -mt-20 relative z-10">
-            <a href="#pricing" className="w-full max-w-lg">
-              <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
-                QUERO DORMIR MELHOR AGORA
-              </Button>
-            </a>
-          </div>
           <FaqSection />
         </div>
       </div>
