@@ -23,10 +23,6 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         trackEvent('opened_offer');
     }, []);
     
-    const handleCtaClick = () => {
-        window.location.href = 'https://pay.cakto.com.br/3cay6bo_559317';
-    }
-
   return (
     <div className="bg-background relative">
       <Button
@@ -62,7 +58,7 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
           <GuaranteeSection />
           <div className="flex justify-center text-center -mt-10">
             <a href="#pricing" className="w-full max-w-lg">
-              <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16" onClick={handleCtaClick}>
+              <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
                 QUERO DORMIR MELHOR AGORA
               </Button>
             </a>
