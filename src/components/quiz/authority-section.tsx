@@ -66,7 +66,7 @@ export default function AuthoritySection({ onContinue }: AuthoritySectionProps) 
         </Carousel>
       </div>
       <div className="text-center">
-        <Button onClick={onContinue} size="lg">CONTINUAR</Button>
+        <Button onClick={onContinue} size="lg" className="w-full max-w-sm animate-pulse-cta text-xl font-bold h-16">CONTINUAR</Button>
       </div>
     </div>
   );
