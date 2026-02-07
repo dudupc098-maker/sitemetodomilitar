@@ -37,6 +37,13 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         <ResultsSection plan={plan} />
         <BeforeAfterSection />
         <WhatYouGetSection />
+        <div className="flex justify-center text-center">
+            <a href="#pricing" className="w-full max-w-lg">
+                <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
+                    GARANTIR ACESSO AGORA
+                </Button>
+            </a>
+        </div>
         <div className="space-y-6">
           <BonusSection />
           <div className="flex flex-col items-center gap-6 text-center">
@@ -56,7 +63,7 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
         <PlansSection />
         <div className="space-y-2">
           <GuaranteeSection />
-          <div className="flex justify-center text-center -mt-10">
+          <div className="flex justify-center text-center -mt-16 relative z-10">
             <a href="#pricing" className="w-full max-w-lg">
               <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
                 QUERO DORMIR MELHOR AGORA
