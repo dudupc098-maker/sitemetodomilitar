@@ -124,7 +124,7 @@ export const quizData = {
       ctaText: 'QUERO DORMIR BEM POR R$37',
       features: [
         'Área de Membros Premium Estilo Netflix',
-        '15+ Aulas em Vídeo (Acesso Imediato)',
+        '+15 Aulas em Vídeo',
         'Ebook "O Código do Sono"',
         'Todos os 5 Bônus Exclusivos (Disponíveis Hoje)',
         'Comunidade de Membros',
