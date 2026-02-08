@@ -55,7 +55,7 @@ export default function SalesPage({ plan, onBack }: SalesPageProps) {
               </div>
               <a href="#pricing" className="w-full max-w-md">
                 <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
-                    QUERO MEUS 5 BÔNUS EXCLUSIVOS!
+                    QUERO MEUS 5 BÔNUS EXCLUSIVOS
                 </Button>
               </a>
           </div>
