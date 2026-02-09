@@ -10,7 +10,7 @@ export default function MembersAreaMockup() {
     <section className="w-full animate-fade-in-up py-12 md:py-16">
       <div className="text-center mb-8 md:mb-12">
         <h2 className="font-headline text-xl font-semibold md:text-3xl">
-          Veja como é a Área de Membros
+          Veja exatamente como você vai acessar a Área de Membros
         </h2>
         <p className="mt-2 max-w-2xl mx-auto text-muted-foreground text-sm md:text-base">
           Acesso imediato pelo celular, tablet ou computador — tudo organizado para resultados rápidos.
