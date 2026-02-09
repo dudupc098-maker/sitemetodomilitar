@@ -12,6 +12,7 @@ import BeforeAfterSection from './before-after-section';
 import PlansSection from './plans-section';
 import GuaranteeSection from './guarantee-section';
 import FaqSection from './faq-section';
+import MembersAreaMockup from './members-area-mockup';
 
 type SalesPageProps = {
   plan: PersonalizedSleepPlanOutput;
@@ -51,6 +52,9 @@ export default function SalesPage({ plan }: SalesPageProps) {
               </a>
           </div>
         </div>
+        
+        <MembersAreaMockup />
+
         <PlansSection />
         <div className="space-y-2">
           <GuaranteeSection />
