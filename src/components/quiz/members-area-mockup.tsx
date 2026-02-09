@@ -142,7 +142,6 @@ export default function MembersAreaMockup() {
                 <Button variant="outline" className="w-full max-w-xs mx-auto lg:mx-0">
                     VER A ÁREA
                 </Button>
-                <p className="text-xs text-muted-foreground mt-3">Conteúdos práticos, curtos e aplicáveis — comece hoje mesmo.</p>
             </div>
         </div>
 
