@@ -28,7 +28,7 @@ export default function ResultsSection({ plan, answers }: ResultsSectionProps) {
           Seu <span className="text-primary">diagnóstico</span> do sono está pronto!
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-base text-[#505D6A] md:text-lg">
-          O seu perfil mostra dificuldade para desacelerar a mente antes de dormir. Por isso, o Método Sono Militar foi selecionado como o mais eficaz para ajudar você a adormecer rápido e recuperar seu descanso.
+          O seu perfil mostra dificuldade para desacelerar a mente antes de dormir. Por isso, o <span className="font-semibold text-primary">Método Sono Militar</span> foi selecionado como o mais eficaz para ajudar você a adormecer rápido e recuperar seu descanso.
         </p>
         <div className="mt-8">
           <Card className="mx-auto max-w-2xl transform rounded-xl border-border/50 bg-white p-4 text-left shadow-[0_8px_24px_rgba(2,6,23,0.06)] transition-all duration-200 hover:translate-y-[-4px] hover:shadow-lg md:p-6">
