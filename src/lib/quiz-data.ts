@@ -17,10 +17,10 @@ export const quizData = {
       id: 'q2',
       question: 'Quanto tempo você normalmente leva para pegar no sono depois de deitar?',
       options: [
-        { text: '⚡ Menos de 15 minutos', value: 'A' },
-        { text: '⏱️ Entre 15 e 30 minutos', value: 'B' },
-        { text: '⏳ Entre 30 minutos e 1 hora', value: 'C' },
-        { text: '🥵 Mais de 1 hora', value: 'D' },
+        { text: '🌙 Menos de 10 min', value: 'A' },
+        { text: '⏳ 10–30 min', value: 'B' },
+        { text: '😣 30–60 min', value: 'C' },
+        { text: '🕒 Mais de 1 hora', value: 'D' },
       ],
     },
     {
