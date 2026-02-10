@@ -81,7 +81,7 @@ export const quizData: {
     {
       id: 'q5',
       type: 'slider',
-      question: '⏱️ Quantos minutos você leva para pegar no sono?',
+      question: '⏱️ Quantos minutos exatamente você leva para pegar no sono?',
       min: 0,
       max: 120,
       defaultValue: 30,

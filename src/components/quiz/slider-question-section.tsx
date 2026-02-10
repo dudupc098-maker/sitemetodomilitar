@@ -18,6 +18,24 @@ export default function SliderQuestionSection({ question, onAnswer }: SliderQues
     onAnswer(String(value));
   };
 
+  const renderQuestion = (text: string) => {
+    if (question.id === 'q5') {
+      const parts = text.split(/(exatamente)/i);
+      return (
+        <>
+          {parts.map((part, index) => {
+            if (!part) return null;
+            if (part.match(/^(exatamente)$/i)) {
+              return <span key={index} className="text-primary">{part}</span>;
+            }
+            return part;
+          })}
+        </>
+      );
+    }
+    return text;
+  };
+
   const tickMarks = [];
   const tickStep = question.tickStep || (question.max - question.min) / 10;
   for (let i = question.min; i <= question.max; i += tickStep) {
@@ -30,7 +48,7 @@ export default function SliderQuestionSection({ question, onAnswer }: SliderQues
       <Card className="border-0 bg-transparent text-center shadow-none md:border md:bg-card md:shadow-lg">
         <CardHeader>
           <CardTitle className="font-headline text-2xl md:text-3xl">
-            {question.question}
+            {renderQuestion(question.question)}
           </CardTitle>
         </CardHeader>
         
