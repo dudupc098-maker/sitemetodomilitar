@@ -25,7 +25,7 @@ export const quizData = {
     },
     {
       id: 'q3',
-      question: 'Quando foi a última vez que você acordou e percebeu que, mesmo dormindo, continuava exausto(a)?',
+      question: 'Com que frequência você acorda já sentindo que o descanso não foi suficiente?',
       options: [
         { text: '🤔 Quase todos os dias. Eu durmo, mas nunca descanso.', value: 'A' },
         { text: '🌙 Acontece com frequência. Meu corpo não desliga à noite', value: 'B' },
