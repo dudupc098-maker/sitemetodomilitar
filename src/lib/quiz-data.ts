@@ -1,10 +1,40 @@
 import { CheckCircle, ShieldCheck, RefreshCw } from 'lucide-react';
 
-export const quizData = {
+export type MultipleChoiceQuestion = {
+  id: string;
+  type: 'multiple-choice';
+  question: string;
+  options: { text: string; value: string }[];
+};
+
+export type SliderQuestion = {
+  id: string;
+  type: 'slider';
+  question: string;
+  min: number;
+  max: number;
+  defaultValue: number;
+  step: number;
+  unit: string;
+};
+
+export type Question = MultipleChoiceQuestion | SliderQuestion;
+
+
+export const quizData: {
+  totalQuestions: number;
+  questions: Question[];
+  authorityArticles: {id: string, title: string, source: string, imageUrlId: string}[];
+  loadingMessages: string[];
+  testimonials: {id: string, text: string, name: string, tag: string, imageUrlId: string}[];
+  pricing: any;
+  guarantees: any[];
+} = {
   totalQuestions: 6,
   questions: [
     {
       id: 'q1',
+      type: 'multiple-choice',
       question: 'Quando você acorda de manhã, como você sente que está fisicamente e mentalmente?',
       options: [
         { text: '⚡ Cheio de energia', value: 'A' },
@@ -15,6 +45,7 @@ export const quizData = {
     },
     {
       id: 'q2',
+      type: 'multiple-choice',
       question: 'Quanto tempo você normalmente leva para pegar no sono depois de deitar?',
       options: [
         { text: '🌙 Menos de 10 min', value: 'A' },
@@ -25,6 +56,7 @@ export const quizData = {
     },
     {
       id: 'q3',
+      type: 'multiple-choice',
       question: 'Com que frequência você acorda já sentindo que o descanso não foi suficiente?',
       options: [
         { text: '🙂 Raramente', value: 'A' },
@@ -35,6 +67,7 @@ export const quizData = {
     },
     {
       id: 'q4',
+      type: 'multiple-choice',
       question: 'O cansaço já fez você perder produtividade, foco ou disposição durante o dia?',
       options: [
         { text: '👍 Nunca', value: 'A' },
@@ -45,14 +78,17 @@ export const quizData = {
     },
     {
       id: 'q5',
-      question: 'Se existisse um método rápido e comprovado capaz de fazer você dormir em poucos minutos todas as noites, você gostaria de ter acesso a ele ainda hoje?',
-      options: [
-        { text: '✅ SIM', value: 'A' },
-        { text: '❌ NÃO', value: 'B' },
-      ],
+      type: 'slider',
+      question: '⏱️ Quantos minutos você leva para pegar no sono?',
+      min: 0,
+      max: 120,
+      defaultValue: 30,
+      step: 1,
+      unit: 'minutos',
     },
     {
       id: 'q6',
+      type: 'multiple-choice',
       question: 'Você estaria disposto a acordar com energia, sem parecer destruído todas as manhãs, igual a maioria das pessoas que já aplicam este método?',
       options: [
         { text: '✅ SIM', value: 'A' },
