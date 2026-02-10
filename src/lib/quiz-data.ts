@@ -32,7 +32,7 @@ export const quizData: {
   pricing: any;
   guarantees: any[];
 } = {
-  totalQuestions: 6,
+  totalQuestions: 11,
   questions: [
     {
       id: 'q1',
@@ -101,6 +101,57 @@ export const quizData: {
       unit: 'horas',
       tickStep: 1,
       labelStep: 3,
+    },
+    {
+      id: 'q7',
+      type: 'multiple-choice',
+      question: 'O que mais te impede de dormir rápido?',
+      options: [
+        { text: '🧠 Mente acelerada', value: 'A' },
+        { text: '📱 Celular / estímulos', value: 'B' },
+        { text: '😰 Ansiedade / preocupação', value: 'C' },
+        { text: '🔁 Acordo várias vezes', value: 'D' },
+      ],
+    },
+    {
+      id: 'q8',
+      type: 'multiple-choice',
+      question: 'Como a falta de sono afeta sua vida hoje?',
+      options: [
+        { text: '💼 Produtividade baixa', value: 'A' },
+        { text: '😡 Irritação / humor ruim', value: 'B' },
+        { text: '🧠 Falta de foco', value: 'C' },
+        { text: '😴 Cansaço constante', value: 'D' },
+      ],
+    },
+    {
+      id: 'q9',
+      type: 'multiple-choice',
+      question: 'Se nada mudar, como você acha que estará daqui 6 meses?',
+      options: [
+        { text: '😟 Igual ou pior', value: 'A' },
+        { text: '😞 Muito cansado ainda', value: 'B' },
+        { text: '😐 Talvez igual', value: 'C' },
+        { text: '😴 Não quero nem pensar', value: 'D' },
+      ],
+    },
+    {
+      id: 'q10',
+      type: 'multiple-choice',
+      question: 'Se existisse um método simples que te fizesse dormir rápido todas as noites, você testaria?',
+      options: [
+        { text: '✅ Sim', value: 'A' },
+        { text: '❌ Não', value: 'B' },
+      ],
+    },
+    {
+      id: 'q11',
+      type: 'multiple-choice',
+      question: 'Faz sentido pra você que dormir bem muda energia, foco e disposição?',
+      options: [
+        { text: '✅ Sim', value: 'A' },
+        { text: '❌ Não', value: 'B' },
+      ],
     },
   ],
   authorityArticles: [

@@ -117,6 +117,81 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
       );
     }
 
+    if (question.id === 'q7') {
+      const parts = text.split(/(dormir rápido)/i);
+      return (
+        <>
+          {parts.map((part, index) => {
+            if (!part) return null;
+            if (part.match(/^(dormir rápido)$/i)) {
+              return <span key={index} className="text-primary">{part}</span>;
+            }
+            return part;
+          })}
+        </>
+      );
+    }
+    
+    if (question.id === 'q8') {
+      const parts = text.split(/(afeta sua vida hoje)/i);
+      return (
+        <>
+          {parts.map((part, index) => {
+            if (!part) return null;
+            if (part.match(/^(afeta sua vida hoje)$/i)) {
+              return <span key={index} className="text-primary">{part}</span>;
+            }
+            return part;
+          })}
+        </>
+      );
+    }
+
+    if (question.id === 'q9') {
+      const parts = text.split(/(daqui 6 meses)/i);
+      return (
+        <>
+          {parts.map((part, index) => {
+            if (!part) return null;
+            if (part.match(/^(daqui 6 meses)$/i)) {
+              return <span key={index} className="text-primary">{part}</span>;
+            }
+            return part;
+          })}
+        </>
+      );
+    }
+    
+    if (question.id === 'q10') {
+      const parts = text.split(/(dormir rápido todas as noites)/i);
+      return (
+        <>
+          {parts.map((part, index) => {
+            if (!part) return null;
+            if (part.match(/^(dormir rápido todas as noites)$/i)) {
+              return <span key={index} className="text-primary">{part}</span>;
+            }
+            return part;
+          })}
+        </>
+      );
+    }
+
+    if (question.id === 'q11') {
+      const parts = text.split(/(energia, foco e disposição)/i);
+      return (
+        <>
+          {parts.map((part, index) => {
+            if (!part) return null;
+            if (part.match(/^(energia, foco e disposição)$/i)) {
+              return <span key={index} className="text-primary">{part}</span>;
+            }
+            return part;
+          })}
+        </>
+      );
+    }
+
     return text;
   };
 

@@ -20,6 +20,11 @@ const PersonalizedSleepPlanInputSchema = z.object({
   q4: z.string().describe("Response to the question: \"O cansaço já fez você perder produtividade, foco ou disposição durante o dia?\""),
   q5: z.string().describe("Response to the question: \"Quantos minutos você leva para pegar no sono?\""),
   q6: z.string().describe("Response to the question: \"Quantas horas você dorme por noite?\""),
+  q7: z.string().describe("Response to the question: \"O que mais te impede de dormir rápido?\""),
+  q8: z.string().describe("Response to the question: \"Como a falta de sono afeta sua vida hoje?\""),
+  q9: z.string().describe("Response to the question: \"Se nada mudar, como você acha que estará daqui 6 meses?\""),
+  q10: z.string().describe("Response to the question: \"Se existisse um método simples que te fizesse dormir rápido todas as noites, você testaria?\""),
+  q11: z.string().describe("Response to the question: \"Faz sentido pra você que dormir bem muda energia, foco e disposição?\""),
 });
 export type PersonalizedSleepPlanInput = z.infer<
   typeof PersonalizedSleepPlanInputSchema
@@ -52,6 +57,11 @@ Q3: {{{q3}}}
 Q4: {{{q4}}}
 Q5: {{{q5}}} minutos
 Q6: {{{q6}}} horas
+Q7: {{{q7}}}
+Q8: {{{q8}}}
+Q9: {{{q9}}}
+Q10: {{{q10}}}
+Q11: {{{q11}}}
 
 Analyze these responses and provide:
 1.  A recommended sleep method (method field) - in almost all cases this should be "Military Sleep Method".
