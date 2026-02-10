@@ -19,7 +19,7 @@ const PersonalizedSleepPlanInputSchema = z.object({
   q3: z.string().describe("Response to the question: \"Com que frequência você acorda já sentindo que o descanso não foi suficiente?\""),
   q4: z.string().describe("Response to the question: \"O cansaço já fez você perder produtividade, foco ou disposição durante o dia?\""),
   q5: z.string().describe("Response to the question: \"Quantos minutos você leva para pegar no sono?\""),
-  q6: z.string().describe("Response to the question: \"Você estaria disposto a acordar com energia, sem parecer destruído todas as manhãs, igual a maioria das pessoas que já aplicam este método?\""),
+  q6: z.string().describe("Response to the question: \"Quantas horas exatamente você dorme por noite?\""),
 });
 export type PersonalizedSleepPlanInput = z.infer<
   typeof PersonalizedSleepPlanInputSchema
@@ -51,11 +51,11 @@ Q2: {{{q2}}}
 Q3: {{{q3}}}
 Q4: {{{q4}}}
 Q5: {{{q5}}} minutos
-Q6: {{{q6}}}
+Q6: {{{q6}}} horas
 
 Analyze these responses and provide:
 1.  A recommended sleep method (method field) - in almost all cases this should be "Military Sleep Method".
-2.  Three personalized insights (insights array) based on their responses. These should be short, actionable, and emotionally resonant.  Focus on the user's pain points and how the Military Sleep Method can address them. The response to Q5 is in minutes.
+2.  Three personalized insights (insights array) based on their responses. These should be short, actionable, and emotionally resonant.  Focus on the user's pain points and how the Military Sleep Method can address them. The response to Q5 is in minutes. The response to Q6 is in hours.
 
 Ensure that the output is valid JSON matching the schema.
 `,

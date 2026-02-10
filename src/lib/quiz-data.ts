@@ -16,6 +16,8 @@ export type SliderQuestion = {
   defaultValue: number;
   step: number;
   unit: string;
+  tickStep: number;
+  labelStep: number;
 };
 
 export type Question = MultipleChoiceQuestion | SliderQuestion;
@@ -85,15 +87,20 @@ export const quizData: {
       defaultValue: 30,
       step: 1,
       unit: 'minutos',
+      tickStep: 10,
+      labelStep: 30,
     },
     {
       id: 'q6',
-      type: 'multiple-choice',
-      question: 'Você estaria disposto a acordar com energia, sem parecer destruído todas as manhãs, igual a maioria das pessoas que já aplicam este método?',
-      options: [
-        { text: '✅ SIM', value: 'A' },
-        { text: '❌ NÃO', value: 'B' },
-      ],
+      type: 'slider',
+      question: '😴 Quantas horas exatamente você dorme por noite?',
+      min: 0,
+      max: 12,
+      defaultValue: 6,
+      step: 0.5,
+      unit: 'horas',
+      tickStep: 1,
+      labelStep: 3,
     },
   ],
   authorityArticles: [

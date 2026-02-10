@@ -19,9 +19,11 @@ export default function SliderQuestionSection({ question, onAnswer }: SliderQues
   };
 
   const tickMarks = [];
-  for (let i = question.min; i <= question.max; i += 30) {
+  const tickStep = question.tickStep || (question.max - question.min) / 10;
+  for (let i = question.min; i <= question.max; i += tickStep) {
       tickMarks.push(i);
   }
+  const labelStep = question.labelStep || tickStep * 3;
 
   return (
     <div className="w-full max-w-2xl animate-fade-in-up">
@@ -52,7 +54,7 @@ export default function SliderQuestionSection({ question, onAnswer }: SliderQues
                         {tickMarks.map(tick => (
                             <div key={tick} className="absolute -translate-x-1/2" style={{ left: `${((tick - question.min) / (question.max - question.min)) * 100}%` }}>
                                 <div className="h-2 w-0.5 bg-border"></div>
-                                {tick % 30 === 0 && <span className="absolute top-4 left-1/2 -translate-x-1/2 text-xs text-muted-foreground">{tick}</span>}
+                                {tick % labelStep === 0 && <span className="absolute top-4 left-1/2 -translate-x-1/2 text-xs text-muted-foreground">{tick}</span>}
                             </div>
                         ))}
                     </div>
