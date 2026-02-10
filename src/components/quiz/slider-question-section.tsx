@@ -54,7 +54,7 @@ export default function SliderQuestionSection({ question, onAnswer }: SliderQues
         
         <CardContent className="flex flex-col items-center space-y-12 py-8">
             <div>
-                <span className="text-6xl font-bold text-foreground md:text-8xl">{value}</span>
+                <span className="text-6xl font-bold text-primary md:text-8xl">{value}</span>
                 <span className="ml-2 text-2xl font-medium text-muted-foreground md:text-3xl">{question.unit}</span>
             </div>
 
