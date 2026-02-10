@@ -47,9 +47,6 @@ export default function ResultsSection({ plan, answers }: ResultsSectionProps) {
                   <span className="font-bold text-primary">{hoursOfSleep}</span>h por noite
                 </p>
               </div>
-              <p className="text-sm text-[#505D6A]">
-                Selecionamos o Método Sono Militar por ser direto, prático e focado em desacelerar a mente — ideal para o seu perfil.
-              </p>
             </div>
           </Card>
         </div>
