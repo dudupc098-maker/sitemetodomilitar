@@ -8,7 +8,7 @@ export default function WhatYouGetSection() {
     <section className="animate-fade-in-up">
       <div className="text-center">
         <h2 className="font-headline text-3xl font-bold md:text-4xl">
-          O que você vai receber
+          O que você vai <span className="text-primary">receber</span>
         </h2>
       </div>
 
