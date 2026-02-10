@@ -35,7 +35,7 @@ export const quizData = {
     },
     {
       id: 'q4',
-      question: 'Quando você promete a si mesmo que vai “melhorar sua rotina de sono”… o que realmente acontece?',
+      question: 'O cansaço já fez você perder produtividade, foco ou disposição durante o dia?',
       options: [
         { text: '🏆 Eu cumpro', value: 'A' },
         { text: '🗓️ Faço por alguns dias, depois desando', value: 'B' },

@@ -73,12 +73,12 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
     }
 
     if (question.id === 'q4') {
-      const parts = text.split(/(“melhorar sua rotina de sono”)/i);
+      const parts = text.split(/(produtividade, foco ou disposição)/i);
       return (
         <>
           {parts.map((part, index) => {
             if (!part) return null;
-            if (part.match(/^(“melhorar sua rotina de sono”)$/i)) {
+            if (part.match(/^(produtividade, foco ou disposição)$/i)) {
               return <span key={index} className="text-primary">{part}</span>;
             }
             return part;
