@@ -19,7 +19,7 @@ const PersonalizedSleepPlanInputSchema = z.object({
   q3: z.string().describe("Response to the question: \"Com que frequência você acorda já sentindo que o descanso não foi suficiente?\""),
   q4: z.string().describe("Response to the question: \"O cansaço já fez você perder produtividade, foco ou disposição durante o dia?\""),
   q5: z.string().describe("Response to the question: \"Quantos minutos você leva para pegar no sono?\""),
-  q6: z.string().describe("Response to the question: \"Quantas horas exatamente você dorme por noite?\""),
+  q6: z.string().describe("Response to the question: \"Quantas horas você dorme por noite?\""),
 });
 export type PersonalizedSleepPlanInput = z.infer<
   typeof PersonalizedSleepPlanInputSchema

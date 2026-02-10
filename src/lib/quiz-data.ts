@@ -93,7 +93,7 @@ export const quizData: {
     {
       id: 'q6',
       type: 'slider',
-      question: '😴 Quantas horas exatamente você dorme por noite?',
+      question: '😴 Quantas horas você dorme por noite?',
       min: 0,
       max: 12,
       defaultValue: 6,
