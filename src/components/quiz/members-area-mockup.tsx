@@ -69,23 +69,6 @@ export default function MembersAreaMockup() {
                 </li>
             </ul>
 
-            <div className="space-y-3">
-                 <div className="flex items-center gap-4 p-3 border border-green-500/30 bg-green-500/10 rounded-lg">
-                    <ShieldCheck className="w-6 h-6 text-green-600 flex-shrink-0" />
-                    <div>
-                        <h4 className="font-bold text-sm text-green-700 dark:text-green-300">Garantia de 7 Dias</h4>
-                        <p className="text-xs text-green-800/80 dark:text-green-300/80">Reembolso total, sem burocracia.</p>
-                    </div>
-                </div>
-                <div className="flex items-center gap-4 p-3 border border-primary/20 bg-primary/10 rounded-lg">
-                    <Rocket className="w-6 h-6 text-primary flex-shrink-0" />
-                    <div>
-                        <h4 className="font-bold text-sm text-primary">Acesso Imediato</h4>
-                        <p className="text-xs text-primary/80">Comece a usar assim que o pagamento for aprovado.</p>
-                    </div>
-                </div>
-            </div>
-
              <div className="text-center lg:text-left">
                 <Button variant="outline" className="w-full max-w-xs mx-auto lg:mx-0">
                     VER A ÁREA
