@@ -27,10 +27,10 @@ export const quizData = {
       id: 'q3',
       question: 'Com que frequência você acorda já sentindo que o descanso não foi suficiente?',
       options: [
-        { text: '🤔 Quase todos os dias. Eu durmo, mas nunca descanso.', value: 'A' },
-        { text: '🌙 Acontece com frequência. Meu corpo não desliga à noite', value: 'B' },
-        { text: '😞 Não é sempre, mas já sei que meu sono não é normal', value: 'C' },
-        { text: '💔 Ultimamente acordo cansado(a) e passo o dia só sobrevivendo.', value: 'D' },
+        { text: '🙂 Raramente', value: 'A' },
+        { text: '😕 Às vezes', value: 'B' },
+        { text: '😩 Quase todos os dias', value: 'C' },
+        { text: '🥱 Todos os dias', value: 'D' },
       ],
     },
     {
