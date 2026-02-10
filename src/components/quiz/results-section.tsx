@@ -25,7 +25,7 @@ export default function ResultsSection({ plan, answers }: ResultsSectionProps) {
     <section className="w-full animate-fade-in-up bg-white py-12 md:py-20">
       <div className="container mx-auto max-w-4xl px-5 text-center">
         <h1 className="text-2xl font-bold text-[#0F1720] md:text-3xl">
-          Com base nas suas respostas, identificamos o método mais eficaz para você dormir rápido
+          Seu diagnóstico do sono está pronto!
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-base text-[#505D6A] md:text-lg">
           O seu perfil mostra dificuldade para desacelerar a mente antes de dormir. Por isso, o Método Sono Militar foi selecionado como o mais eficaz para ajudar você a adormecer rápido e recuperar seu descanso.
