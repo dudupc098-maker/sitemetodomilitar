@@ -53,20 +53,6 @@ export default function ResultsSection({ plan, answers }: ResultsSectionProps) {
             </div>
           </Card>
         </div>
-        <div className="mt-8 grid grid-cols-2 justify-center gap-x-4 gap-y-4 text-center md:flex md:flex-row md:justify-center md:gap-x-8">
-          <div className="flex items-center justify-center gap-2">
-            <ShieldCheck className="h-5 w-5 text-green-600" />
-            <span className="text-xs font-medium text-gray-600 md:text-sm">Garantia 7 dias</span>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <Zap className="h-5 w-5 text-primary" />
-            <span className="text-xs font-medium text-gray-600 md:text-sm">Acesso imediato</span>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <Clock className="h-5 w-5 text-primary" />
-            <span className="text-xs font-medium text-gray-600 md:text-sm">Conteúdo prático</span>
-          </div>
-        </div>
         <p className="mt-8 text-xs text-gray-500">
           Resultados variam por pessoa. Método natural e baseado em técnicas práticas.
         </p>
