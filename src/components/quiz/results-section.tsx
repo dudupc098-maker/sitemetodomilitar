@@ -36,7 +36,7 @@ export default function ResultsSection({ plan, answers }: ResultsSectionProps) {
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-5 w-5 rounded-full bg-green-100 p-0.5 text-green-600" />
                 <p className="text-sm font-semibold text-gray-700">
-                  Perfil analisado • Diagnóstico personalizado • Método definido
+                  Método ideal definido para você
                 </p>
               </div>
               <div className="rounded-lg bg-primary/5 p-4">
