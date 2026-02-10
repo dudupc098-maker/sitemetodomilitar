@@ -1,9 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { getPersonalizedPlan } from '@/app/actions';
 import { trackEvent } from '@/lib/analytics';
-import { quizData, Question } from '@/lib/quiz-data';
+import { quizData } from '@/lib/quiz-data';
 import type { PersonalizedSleepPlanOutput } from '@/ai/flows/personalized-sleep-plan';
 import InitialSection from './initial-section';
 import QuestionSection from './question-section';
@@ -12,9 +11,8 @@ import LoadingSection from './loading-section';
 import ProgressBar from './progress-bar';
 import SliderQuestionSection from './slider-question-section';
 
-
 type QuizStepsProps = {
-  onFinish: (plan: PersonalizedSleepPlanOutput) => void;
+  onFinish: (plan: PersonalizedSleepPlanOutput, answers: Answers) => void;
 };
 
 type Answers = { [key: string]: string };
@@ -62,7 +60,7 @@ export default function QuizSteps({ onFinish }: QuizStepsProps) {
   };
 
   if (showLoading) {
-    return <LoadingSection onComplete={onFinish} answers={answers} />;
+    return <LoadingSection onComplete={(plan) => onFinish(plan, answers)} answers={answers} />;
   }
   
   const renderStep = () => {

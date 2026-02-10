@@ -11,47 +11,59 @@ import PlansSection from './plans-section';
 import GuaranteeSection from './guarantee-section';
 import FaqSection from './faq-section';
 import MembersAreaMockup from './members-area-mockup';
+import ResultsSection from './results-section';
+import type { PersonalizedSleepPlanOutput } from '@/ai/flows/personalized-sleep-plan';
 
-export default function SalesPage() {
+type SalesPageProps = {
+    plan: PersonalizedSleepPlanOutput;
+    answers: Record<string, string>;
+};
+
+export default function SalesPage({ plan, answers }: SalesPageProps) {
     useEffect(() => {
-        trackEvent('opened_offer');
-    }, []);
+        trackEvent('opened_offer', {
+            ...answers
+        });
+    }, [answers]);
     
   return (
-    <div className="bg-background relative">
-      <div className="container mx-auto max-w-5xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
-        <BeforeAfterSection />
-        <WhatYouGetSection />
-        <div className="flex justify-center text-center">
-            <a href="#pricing" className="w-full max-w-lg">
-                <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
-                    GARANTIR ACESSO AGORA
-                </Button>
-            </a>
-        </div>
-        <div className="space-y-6">
-          <BonusSection />
-          <div className="flex flex-col items-center gap-6 text-center">
-              <div className="flex w-full max-w-md items-start gap-3 rounded-lg border border-primary/20 bg-primary/5 p-4 text-left">
-                  <Info className="mt-0.5 h-5 w-5 shrink-0 text-primary/80" />
-                  <p className="text-sm text-foreground/90">
-                      Esses bônus foram criados para acelerar sua adaptação ao Método Sono Militar e facilitar seus primeiros resultados. <strong>Disponíveis somente hoje.</strong>
-                  </p>
-              </div>
-              <a href="#pricing" className="w-full max-w-md">
-                <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
-                    QUERO MEUS 5 BÔNUS EXCLUSIVOS
-                </Button>
-              </a>
-          </div>
-        </div>
-        
-        <MembersAreaMockup />
+    <div className="relative">
+      <ResultsSection plan={plan} answers={answers} />
+      <div className="bg-background">
+        <div className="container mx-auto max-w-5xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
+            <BeforeAfterSection />
+            <WhatYouGetSection />
+            <div className="flex justify-center text-center">
+                <a href="#pricing" className="w-full max-w-lg">
+                    <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
+                        GARANTIR ACESSO AGORA
+                    </Button>
+                </a>
+            </div>
+            <div className="space-y-6">
+            <BonusSection />
+            <div className="flex flex-col items-center gap-6 text-center">
+                <div className="flex w-full max-w-md items-start gap-3 rounded-lg border border-primary/20 bg-primary/5 p-4 text-left">
+                    <Info className="mt-0.5 h-5 w-5 shrink-0 text-primary/80" />
+                    <p className="text-sm text-foreground/90">
+                        Esses bônus foram criados para acelerar sua adaptação ao Método Sono Militar e facilitar seus primeiros resultados. <strong>Disponíveis somente hoje.</strong>
+                    </p>
+                </div>
+                <a href="#pricing" className="w-full max-w-md">
+                    <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
+                        QUERO MEUS 5 BÔNUS EXCLUSIVOS
+                    </Button>
+                </a>
+            </div>
+            </div>
+            
+            <MembersAreaMockup />
 
-        <PlansSection />
-        <div className="space-y-2">
-          <GuaranteeSection />
-          <FaqSection />
+            <PlansSection />
+            <div className="space-y-2">
+            <GuaranteeSection />
+            <FaqSection />
+            </div>
         </div>
       </div>
     </div>

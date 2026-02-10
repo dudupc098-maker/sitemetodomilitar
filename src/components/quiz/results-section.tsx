@@ -1,22 +1,76 @@
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import type { PersonalizedSleepPlanOutput } from '@/ai/flows/personalized-sleep-plan';
-import { Lightbulb } from 'lucide-react';
+import { Card } from '@/components/ui/card';
+import { CheckCircle, ShieldCheck, Zap, Clock } from 'lucide-react';
 
 type ResultsSectionProps = {
   plan: PersonalizedSleepPlanOutput;
+  answers: Record<string, string>;
 };
 
-export default function ResultsSection({ plan }: ResultsSectionProps) {
+const q7Mapping: Record<string, string> = {
+  A: 'Mente acelerada',
+  B: 'Estímulos de tela',
+  C: 'Ansiedade',
+  D: 'Despertares noturnos',
+};
+
+export default function ResultsSection({ plan, answers }: ResultsSectionProps) {
+  const principalIssue = q7Mapping[answers.q7] || 'Mente acelerada';
+  const minutesToSleep = answers.q5 || 'N/A';
+  const hoursOfSleep = answers.q6 || 'N/A';
+
   return (
-    <section className="animate-fade-in-up text-center">
-      <h1 className="font-headline text-3xl font-bold text-foreground md:text-5xl">
-        🎉 Parabéns! Seu método ideal é: <span className="text-primary">{plan.method}</span>
-      </h1>
-      <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground md:text-xl">
-        Com base em suas respostas, o Método Sono Militar é ideal para fazer seu corpo dormir rápido em menos de 2 minutos.
-      </p>
+    <section className="w-full animate-fade-in-up bg-white py-12 md:py-20">
+      <div className="container mx-auto max-w-4xl px-5 text-center">
+        <h1 className="text-2xl font-bold text-[#0F1720] md:text-3xl">
+          Com base nas suas respostas, identificamos o método mais eficaz para você dormir rápido
+        </h1>
+        <p className="mx-auto mt-4 max-w-3xl text-base text-[#505D6A] md:text-lg">
+          O seu perfil mostra dificuldade para desacelerar a mente antes de dormir. Por isso, o Método Sono Militar foi selecionado como o mais eficaz para ajudar você a adormecer rápido e recuperar seu descanso.
+        </p>
+        <div className="mt-8">
+          <Card className="mx-auto max-w-2xl transform rounded-xl border-border/50 bg-white p-4 text-left shadow-[0_8px_24px_rgba(2,6,23,0.06)] transition-all duration-200 hover:translate-y-[-4px] hover:shadow-lg md:p-6">
+            <div className="flex flex-col space-y-4">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-5 w-5 rounded-full bg-green-100 p-0.5 text-green-600" />
+                <p className="text-sm font-semibold text-gray-700">
+                  Perfil analisado • Diagnóstico personalizado • Método definido
+                </p>
+              </div>
+              <div className="rounded-lg bg-primary/5 p-4">
+                <p className="text-sm text-[#505D6A]">
+                  Seu perfil:{' '}
+                  <span className="font-bold text-primary">{principalIssue}</span> • Demora{' '}
+                  <span className="font-bold text-primary">{minutesToSleep}</span> minutos para pegar no sono • Dorme{' '}
+                  <span className="font-bold text-primary">{hoursOfSleep}</span>h por noite
+                </p>
+              </div>
+              <p className="text-sm text-[#505D6A]">
+                Selecionamos o Método Sono Militar por ser direto, prático e focado em desacelerar a mente — ideal para o seu perfil.
+              </p>
+            </div>
+          </Card>
+        </div>
+        <div className="mt-8 grid grid-cols-2 justify-center gap-x-4 gap-y-4 text-center md:flex md:flex-row md:justify-center md:gap-x-8">
+          <div className="flex items-center justify-center gap-2">
+            <ShieldCheck className="h-5 w-5 text-green-600" />
+            <span className="text-xs font-medium text-gray-600 md:text-sm">Garantia 7 dias</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Zap className="h-5 w-5 text-primary" />
+            <span className="text-xs font-medium text-gray-600 md:text-sm">Acesso imediato</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Clock className="h-5 w-5 text-primary" />
+            <span className="text-xs font-medium text-gray-600 md:text-sm">Conteúdo prático</span>
+          </div>
+        </div>
+        <p className="mt-8 text-xs text-gray-500">
+          Resultados variam por pessoa. Método natural e baseado em técnicas práticas.
+        </p>
+      </div>
     </section>
   );
 }
