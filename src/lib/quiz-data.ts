@@ -7,10 +7,10 @@ export const quizData = {
       id: 'q1',
       question: 'Quando você acorda de manhã, como você sente que está fisicamente e mentalmente?',
       options: [
-        { text: '😎 Pessoa forte, descansada e confiante', value: 'A' },
-        { text: '🙂 Ok… mas dá pra notar um leve cansaço', value: 'B' },
-        { text: '😩 Pareço sempre cansado(a), mesmo quando tento disfarçar', value: 'C' },
-        { text: '😬 Claramente esgotado(a) e sem energia', value: 'D' },
+        { text: '⚡ Cheio de energia', value: 'A' },
+        { text: '😐 Cansado, mas funcional', value: 'B' },
+        { text: '😴 Muito cansado', value: 'C' },
+        { text: '🥀 Exausto / destruído', value: 'D' },
       ],
     },
     {
