@@ -53,9 +53,6 @@ export default function ResultsSection({ plan, answers }: ResultsSectionProps) {
             </div>
           </Card>
         </div>
-        <p className="mt-8 text-xs text-gray-500">
-          Resultados variam por pessoa. Método natural e baseado em técnicas práticas.
-        </p>
       </div>
     </section>
   );
