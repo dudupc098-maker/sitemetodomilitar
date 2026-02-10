@@ -1,7 +1,5 @@
 'use client';
 
-import type { PersonalizedSleepPlanOutput } from '@/ai/flows/personalized-sleep-plan';
-import ResultsSection from './results-section';
 import { trackEvent } from '@/lib/analytics';
 import { useEffect } from 'react';
 import { Button } from '../ui/button';
@@ -14,11 +12,7 @@ import GuaranteeSection from './guarantee-section';
 import FaqSection from './faq-section';
 import MembersAreaMockup from './members-area-mockup';
 
-type SalesPageProps = {
-  plan: PersonalizedSleepPlanOutput;
-};
-
-export default function SalesPage({ plan }: SalesPageProps) {
+export default function SalesPage() {
     useEffect(() => {
         trackEvent('opened_offer');
     }, []);
@@ -26,7 +20,6 @@ export default function SalesPage({ plan }: SalesPageProps) {
   return (
     <div className="bg-background relative">
       <div className="container mx-auto max-w-5xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
-        <ResultsSection plan={plan} />
         <BeforeAfterSection />
         <WhatYouGetSection />
         <div className="flex justify-center text-center">

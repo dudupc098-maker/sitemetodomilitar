@@ -7,10 +7,8 @@ import SalesPage from './sales-page';
 
 export default function QuizFlow() {
   const [quizFinished, setQuizFinished] = useState(false);
-  const [plan, setPlan] = useState<PersonalizedSleepPlanOutput | null>(null);
 
   const handleQuizFinish = (planData: PersonalizedSleepPlanOutput) => {
-    setPlan(planData);
     setQuizFinished(true);
     window.scrollTo(0, 0);
   };
@@ -20,7 +18,7 @@ export default function QuizFlow() {
       {!quizFinished ? (
         <QuizSteps onFinish={handleQuizFinish} />
       ) : (
-        plan && <SalesPage plan={plan} />
+        <SalesPage />
       )}
     </div>
   );
