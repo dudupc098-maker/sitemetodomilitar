@@ -15,12 +15,12 @@ export const quizData = {
     },
     {
       id: 'q2',
-      question: 'Com que frequência você sente que seu cansaço está fazendo você “ficar pra trás” dos outros?',
+      question: 'Quanto tempo você normalmente leva para pegar no sono depois de deitar?',
       options: [
-        { text: '💪 Quase nunca — me mantenho no ritmo', value: 'A' },
-        { text: '⏱️ Às vezes eu percebo que os outros avançam mais rápido que eu', value: 'B' },
-        { text: '😥 Frequentemente sinto que minha energia atrapalha meu crescimento', value: 'C' },
-        { text: '💔 Direto — meu cansaço já me custou oportunidades reais', value: 'D' },
+        { text: '⚡ Menos de 15 minutos', value: 'A' },
+        { text: '⏱️ Entre 15 e 30 minutos', value: 'B' },
+        { text: '⏳ Entre 30 minutos e 1 hora', value: 'C' },
+        { text: '🥵 Mais de 1 hora', value: 'D' },
       ],
     },
     {

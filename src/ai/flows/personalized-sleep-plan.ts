@@ -14,8 +14,8 @@ import {z} from 'genkit';
 const PersonalizedSleepPlanInputSchema = z.object({
   q1: z
     .string()
-    .describe("Response to the question: \"Quando alguém olha para você de manhã, que imagem você acha que transmite?\""),
-  q2: z.string().describe("Response to the question: \"Com que frequência você sente que seu cansaço está fazendo você “ficar pra trás” dos outros?\""),
+    .describe("Response to the question: \"Quando você acorda de manhã, como você sente que está fisicamente e mentalmente?\""),
+  q2: z.string().describe("Response to the question: \"Quanto tempo você normalmente leva para pegar no sono depois de deitar?\""),
   q3: z.string().describe("Response to the question: \"Quando foi a última vez que você acordou e percebeu que, mesmo dormindo, continuava exausto(a)?\""),
   q4: z.string().describe("Response to the question: \"Quando você promete a si mesmo que vai “melhorar sua rotina de sono”… o que realmente acontece?\""),
   q5: z.string().describe("Response to the question: \"Se existisse um método rápido e comprovado capaz de fazer você dormir em poucos minutos todas as noites, você gostaria de ter acesso a ele ainda hoje?\""),
