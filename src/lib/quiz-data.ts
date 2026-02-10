@@ -37,10 +37,10 @@ export const quizData = {
       id: 'q4',
       question: 'O cansaço já fez você perder produtividade, foco ou disposição durante o dia?',
       options: [
-        { text: '🏆 Eu cumpro', value: 'A' },
-        { text: '🗓️ Faço por alguns dias, depois desando', value: 'B' },
-        { text: '😔 Sempre volto aos velhos hábitos', value: 'C' },
-        { text: '😖 Nem começo, já sinto que vou falhar', value: 'D' },
+        { text: '👍 Nunca', value: 'A' },
+        { text: '🤏 Algumas vezes', value: 'B' },
+        { text: '📉 Frequentemente', value: 'C' },
+        { text: '🚨 Quase sempre', value: 'D' },
       ],
     },
     {
