@@ -5,7 +5,7 @@ export const quizData = {
   questions: [
     {
       id: 'q1',
-      question: 'Quando alguém olha para você de manhã, que imagem você acha que transmite?',
+      question: 'Quando você acorda de manhã, como você sente que está fisicamente e mentalmente?',
       options: [
         { text: '😎 Pessoa forte, descansada e confiante', value: 'A' },
         { text: '🙂 Ok… mas dá pra notar um leve cansaço', value: 'B' },

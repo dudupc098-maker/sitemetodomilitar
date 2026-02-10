@@ -28,12 +28,12 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
 
   const renderQuestion = (text: string) => {
     if (question.id === 'q1') {
-      const parts = text.split(/(você acha que transmite\?)/i);
+      const parts = text.split(/(fisicamente e mentalmente\?)/i);
       return (
         <>
           {parts.map((part, index) => {
             if (!part) return null;
-            if (part.match(/^(você acha que transmite\?)$/i)) {
+            if (part.match(/^(fisicamente e mentalmente\?)$/i)) {
               return <span key={index} className="text-primary">{part}</span>;
             }
             return part;
