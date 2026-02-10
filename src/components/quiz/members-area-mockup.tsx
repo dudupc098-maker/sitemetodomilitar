@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Rocket, ShieldCheck, Smartphone, Users, Video } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 export default function MembersAreaMockup() {
   const membersAreaImage = PlaceHolderImages.find(
@@ -17,7 +18,7 @@ export default function MembersAreaMockup() {
           Veja <span className="text-primary">exatamente</span> o que você vai receber
         </h2>
         <p className="mx-auto mt-2 max-w-2xl text-sm text-muted-foreground md:text-base">
-          Acesso imediato pelo celular, tablet ou computador — tudo organizado para resultados rápidos.
+          Após adquirir o nosso método, você terá acesso automático via e-mail a essa área de conteúdos exclusivos.
         </p>
       </div>
 
