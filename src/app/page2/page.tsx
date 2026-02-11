@@ -10,7 +10,7 @@ export default function Page2() {
         <div className="flex justify-center text-center">
             <Link href="/page3" className="w-full max-w-lg">
                 <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 animate-pulse-cta text-xl font-bold h-16 rounded-md shadow-md">
-                    Ver acesso e começar hoje
+                    QUERO DORMIR ASSIM TAMBÉM!
                 </Button>
             </Link>
         </div>
