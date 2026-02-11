@@ -1,7 +1,6 @@
 import PlansSection from '@/components/quiz/plans-section';
 import GuaranteeSection from '@/components/quiz/guarantee-section';
 import FaqSection from '@/components/quiz/faq-section';
-import { Award, Mail, ShieldCheck } from 'lucide-react';
 
 export default function Page3() {
   return (
@@ -16,19 +15,19 @@ export default function Page3() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 border-y border-border/50 py-4 sm:flex-row sm:gap-8 sm:py-5">
             <div className="flex items-center gap-2.5 text-muted-foreground">
-              <ShieldCheck className="h-5 w-5 text-primary" />
+              <span className="text-xl">🔒</span>
               <span className="text-sm font-medium">
                 Pagamento 100% Seguro
               </span>
             </div>
             <div className="flex items-center gap-2.5 text-muted-foreground">
-              <Mail className="h-5 w-5 text-primary" />
+              <span className="text-xl">⚡</span>
               <span className="text-sm font-medium">
                 Acesso Imediato no Email
               </span>
             </div>
             <div className="flex items-center gap-2.5 text-muted-foreground">
-              <Award className="h-5 w-5 text-primary" />
+              <span className="text-xl">🛡</span>
               <span className="text-sm font-medium">
                 Garantia Incondicional
               </span>
