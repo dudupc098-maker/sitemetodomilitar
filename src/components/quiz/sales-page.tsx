@@ -57,6 +57,13 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
             </div>
             </div>
             <MembersAreaMockup />
+            <div className="flex justify-center text-center">
+                <Link href="/page2" className="w-full max-w-lg">
+                    <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
+                        DESBLOQUEAR MÉTODO AGORA
+                    </Button>
+                </Link>
+            </div>
         </div>
       </div>
     </div>
