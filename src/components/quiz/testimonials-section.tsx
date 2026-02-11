@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
             Eles voltaram a dormir profundo em <span className="text-primary">poucos dias</span>. Agora é a sua vez de dormir!
           </h2>
           <p className="mx-auto mt-3 max-w-3xl text-base text-muted-foreground md:text-lg">
-            Relatos reais de pessoas que transformaram suas noites com o <span className="underline decoration-primary">Método Sono Militar</span>.
+            Relatos reais de pessoas que transformaram suas noites com o <span className="font-bold underline decoration-primary">Método Sono Militar</span>.
           </p>
         </div>
   
