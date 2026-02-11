@@ -4,6 +4,22 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { quizData } from '@/lib/quiz-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Star } from 'lucide-react';
+
+const StarRating = ({ rating }: { rating: number }) => {
+  return (
+    <div className="flex items-center">
+      {Array.from({ length: 5 }, (_, i) => (
+        <Star
+          key={i}
+          className={`h-4 w-4 ${
+            i < rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'
+          }`}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default function TestimonialsSection() {
     return (
@@ -31,7 +47,10 @@ export default function TestimonialsSection() {
                       <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                     <div>
-                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <div className="flex items-center gap-2">
+                        <p className="font-semibold text-foreground">{testimonial.name}</p>
+                        {testimonial.rating && <StarRating rating={testimonial.rating} />}
+                      </div>
                       <p className="text-sm text-muted-foreground">{testimonial.tag}</p>
                     </div>
                   </div>

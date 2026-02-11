@@ -28,7 +28,7 @@ export const quizData: {
   questions: Question[];
   authorityArticles: {id: string, title: string, source: string, imageUrlId: string}[];
   loadingMessages: string[];
-  testimonials: {id: string, text: string, name: string, tag: string, imageUrlId: string}[];
+  testimonials: {id: string, text: string, name: string, tag: string, imageUrlId: string, rating: number}[];
   pricing: any;
   guarantees: any[];
 } = {
@@ -194,6 +194,7 @@ export const quizData: {
       name: 'Mariana',
       tag: '34, professora (SP)',
       imageUrlId: 'testimonial-avatar-1',
+      rating: 5,
     },
     {
       id: 'testimonial-2',
@@ -201,6 +202,7 @@ export const quizData: {
       name: 'Ricardo',
       tag: '39, analista (RJ)',
       imageUrlId: 'testimonial-avatar-2',
+      rating: 4,
     },
     {
       id: 'testimonial-3',
@@ -208,6 +210,7 @@ export const quizData: {
       name: 'Carla',
       tag: '28, enfermeira (BH)',
       imageUrlId: 'testimonial-avatar-3',
+      rating: 5,
     },
   ],
   pricing: {
