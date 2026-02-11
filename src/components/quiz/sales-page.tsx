@@ -7,13 +7,10 @@ import { Info } from 'lucide-react';
 import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
 import BeforeAfterSection from './before-after-section';
-import PlansSection from './plans-section';
-import GuaranteeSection from './guarantee-section';
-import FaqSection from './faq-section';
-import MembersAreaMockup from './members-area-mockup';
 import ResultsSection from './results-section';
 import type { PersonalizedSleepPlanOutput } from '@/ai/flows/personalized-sleep-plan';
 import MicroReinforcementSection from './micro-reinforcement-section';
+import Link from 'next/link';
 
 type SalesPageProps = {
     plan: PersonalizedSleepPlanOutput;
@@ -36,11 +33,11 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
             <MicroReinforcementSection />
             <WhatYouGetSection />
             <div className="flex justify-center text-center">
-                <a href="#pricing" className="w-full max-w-lg">
+                <Link href="/page2" className="w-full max-w-lg">
                     <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
                         GARANTIR ACESSO AGORA
                     </Button>
-                </a>
+                </Link>
             </div>
             <div className="space-y-6">
             <BonusSection />
@@ -51,20 +48,12 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
                         Esses bônus foram criados para acelerar sua adaptação ao Método Sono Militar e facilitar seus primeiros resultados. <strong>Disponíveis somente hoje.</strong>
                     </p>
                 </div>
-                <a href="#pricing" className="w-full max-w-md">
+                <Link href="/page2" className="w-full max-w-md">
                     <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
                         QUERO MEUS 5 BÔNUS EXCLUSIVOS
                     </Button>
-                </a>
+                </Link>
             </div>
-            </div>
-            
-            <MembersAreaMockup />
-
-            <PlansSection />
-            <div className="space-y-2">
-            <GuaranteeSection />
-            <FaqSection />
             </div>
         </div>
       </div>
