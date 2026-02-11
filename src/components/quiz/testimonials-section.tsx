@@ -10,7 +10,7 @@ export default function TestimonialsSection() {
       <section id="testimonials" className="w-full animate-fade-in-up scroll-mt-24">
         <div className="text-center">
           <h2 className="font-headline text-2xl font-bold leading-tight md:text-3xl">
-            Eles voltaram a dormir profundo em poucos dias. Agora é a sua vez de dormir!
+            Eles voltaram a dormir profundo em <span className="text-primary">poucos dias</span>. Agora é a sua vez de dormir!
           </h2>
           <p className="mx-auto mt-3 max-w-3xl text-base text-muted-foreground md:text-lg">
             Relatos reais de pessoas que transformaram suas noites com o Método Sono Militar.
