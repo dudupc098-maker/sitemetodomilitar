@@ -204,7 +204,7 @@ export const quizData: {
     },
     {
       id: 'testimonial-3',
-      text: 'Trabalho em turnos e pensei que não funcionaria — mas o ajuste pro meu horário fez a diferença.',
+      text: 'Eu vivia cansado e sem foco por dormir mal. O método acalma minha mente e o sono vem naturalmente. Funciona mesmo.',
       name: 'Carla',
       tag: '28, enfermeira (BH)',
       imageUrlId: 'testimonial-avatar-3',
