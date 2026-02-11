@@ -11,6 +11,7 @@ import ResultsSection from './results-section';
 import type { PersonalizedSleepPlanOutput } from '@/ai/flows/personalized-sleep-plan';
 import Link from 'next/link';
 import MicroReinforcementSection from './micro-reinforcement-section';
+import MembersAreaMockup from './members-area-mockup';
 
 type SalesPageProps = {
     plan: PersonalizedSleepPlanOutput;
@@ -55,6 +56,7 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
                 </Link>
             </div>
             </div>
+            <MembersAreaMockup />
         </div>
       </div>
     </div>
