@@ -9,7 +9,6 @@ import BonusSection from './bonus-section';
 import BeforeAfterSection from './before-after-section';
 import ResultsSection from './results-section';
 import type { PersonalizedSleepPlanOutput } from '@/ai/flows/personalized-sleep-plan';
-import MicroReinforcementSection from './micro-reinforcement-section';
 import Link from 'next/link';
 
 type SalesPageProps = {
@@ -30,7 +29,6 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
       <div className="bg-background">
         <div className="container mx-auto max-w-5xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
             <BeforeAfterSection />
-            <MicroReinforcementSection />
             <WhatYouGetSection />
             <div className="flex justify-center text-center">
                 <Link href="/page2" className="w-full max-w-lg">
