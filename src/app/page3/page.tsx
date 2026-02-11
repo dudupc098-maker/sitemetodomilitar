@@ -12,8 +12,7 @@ export default function Page3() {
             Seu acesso ao <span className="text-primary">Método Sono Militar</span> está liberado!
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
-            O método validado para você dormir rápido, acordar com mais energia
-            e finalmente resolver a causa da sua insônia.
+            Comece hoje a desligar a mente, dormir rápido e acordar descansado.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 border-y border-border/50 py-4 sm:flex-row sm:gap-8 sm:py-5">
             <div className="flex items-center gap-2.5 text-muted-foreground">
