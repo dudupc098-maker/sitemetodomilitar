@@ -190,7 +190,7 @@ export const quizData: {
   testimonials: [
     {
       id: 'testimonial-1',
-      text: 'Em 4 dias minha mente parou de rodar à noite; agora eu apago com calma e acordo menos cansado.',
+      text: 'Minha mente não desligava por nada. No 3º dia usando o método, dormi rápido sem perceber. Fazia anos que isso não acontecia.',
       name: 'Mariana',
       tag: '34, professora (SP)',
       imageUrlId: 'testimonial-avatar-1',
