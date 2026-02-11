@@ -34,7 +34,7 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
             <MicroReinforcementSection />
             <WhatYouGetSection />
             <div className="flex justify-center text-center">
-                <Link href="#bonus" scroll={false} className="w-full max-w-lg">
+                <Link href="#bonus" className="w-full max-w-lg">
                     <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
                         GARANTIR ACESSO AGORA
                     </Button>
@@ -49,7 +49,7 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
                         Esses bônus foram criados para acelerar sua adaptação ao Método Sono Militar e facilitar seus primeiros resultados. <strong>Disponíveis somente hoje.</strong>
                     </p>
                 </div>
-                <Link href="#members-area" scroll={false} className="w-full max-w-md">
+                <Link href="#members-area" className="w-full max-w-md">
                     <Button size="lg" className="w-full animate-pulse-cta text-xl font-bold h-16">
                         QUERO MEUS 5 BÔNUS EXCLUSIVOS
                     </Button>
