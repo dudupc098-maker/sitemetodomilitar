@@ -27,7 +27,7 @@ export default function Page3() {
               </span>
             </div>
             <div className="flex items-center gap-2.5 text-muted-foreground">
-              <span className="text-xl">🛡</span>
+              <span className="text-xl">🏆</span>
               <span className="text-sm font-medium">
                 Garantia Incondicional
               </span>
