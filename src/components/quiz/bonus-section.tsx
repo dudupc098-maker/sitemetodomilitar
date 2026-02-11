@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function BonusSection() {
   return (
-    <section className="animate-fade-in-up">
+    <section id="bonus" className="animate-fade-in-up scroll-mt-24">
       <div className="text-center">
         <p className="font-semibold text-primary">BÔNUS EXCLUSIVOS</p>
         <h2 className="mt-2 font-headline text-3xl font-bold md:text-4xl">

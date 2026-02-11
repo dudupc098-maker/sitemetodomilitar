@@ -9,7 +9,7 @@ export default function MembersAreaMockup() {
   );
 
   return (
-    <section className="w-full animate-fade-in-up">
+    <section id="members-area" className="w-full animate-fade-in-up scroll-mt-24">
         <div className="flex flex-col items-center gap-8">
             <div className="text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">
