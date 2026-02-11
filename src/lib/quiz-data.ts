@@ -197,7 +197,7 @@ export const quizData: {
     },
     {
       id: 'testimonial-2',
-      text: 'Segui a rotina guiada e já na primeira semana percebi diferença: menos tempo para pegar no sono.',
+      text: 'Sempre achei que nada simples funcionaria pra mim. Me enganei. Hoje durmo rápido e acordo muito mais disposto.',
       name: 'Ricardo',
       tag: '39, analista (RJ)',
       imageUrlId: 'testimonial-avatar-2',
