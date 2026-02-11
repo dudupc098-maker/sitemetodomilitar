@@ -11,6 +11,14 @@ export default function MembersAreaMockup() {
   return (
     <section className="w-full animate-fade-in-up">
         <div className="flex flex-col items-center gap-8">
+            <div className="text-center">
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">
+                    Acesso a <span className="text-primary">Área de Membros</span>
+                </h2>
+                <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
+                    Após adquirir o nosso método, você terá acesso automático via e-mail a essa área de <span className="text-primary">conteúdos exclusivos</span>.
+                </p>
+            </div>
             <div className="relative aspect-video w-full max-w-3xl overflow-hidden rounded-lg shadow-2xl">
             {membersAreaImage && (
                 <Image
@@ -21,14 +29,6 @@ export default function MembersAreaMockup() {
                 data-ai-hint={membersAreaImage.imageHint}
                 />
             )}
-            </div>
-            <div className="text-center">
-                <h2 className="font-headline text-3xl font-bold md:text-4xl">
-                    Veja como funciona por dentro
-                </h2>
-                <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
-                    Acesso simples, organizado e direto ao ponto para você começar hoje mesmo.
-                </p>
             </div>
         </div>
     </section>
