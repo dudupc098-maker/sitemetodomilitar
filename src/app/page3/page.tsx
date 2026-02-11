@@ -9,8 +9,7 @@ export default function Page3() {
       <div className="container mx-auto max-w-4xl space-y-12 px-4 py-8 md:space-y-16 md:py-12">
         <header className="text-center">
           <h1 className="font-headline text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Sua decisão de dormir bem{' '}
-            <span className="text-primary">todas as noites</span> começa agora
+            Seu acesso ao <span className="text-primary">Método Sono Militar</span> está liberado!
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
             O método validado para você dormir rápido, acordar com mais energia
