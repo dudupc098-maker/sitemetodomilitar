@@ -1,6 +1,7 @@
 import PlansSection from '@/components/quiz/plans-section';
 import GuaranteeSection from '@/components/quiz/guarantee-section';
 import FaqSection from '@/components/quiz/faq-section';
+import { ArrowDownCircle } from 'lucide-react';
 
 export default function Page3() {
   return (
@@ -34,6 +35,10 @@ export default function Page3() {
             </div>
           </div>
         </header>
+
+        <div className="flex justify-center -my-6">
+            <ArrowDownCircle className="h-10 w-10 animate-bounce text-primary/70" />
+        </div>
 
         <PlansSection />
 
