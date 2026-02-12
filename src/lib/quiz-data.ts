@@ -48,12 +48,12 @@ export const quizData: {
     {
       id: 'q2',
       type: 'multiple-choice',
-      question: 'Quanto tempo você normalmente leva para pegar no sono depois de deitar?',
+      question: 'Com que frequência seu cansaço faz você sentir que está ficando para trás?',
       options: [
-        { text: '🌙 Menos de 10 min', value: 'A' },
-        { text: '⏳ 10–30 min', value: 'B' },
-        { text: '😣 30–60 min', value: 'C' },
-        { text: '🕒 Mais de 1 hora', value: 'D' },
+        { text: '🔥 Quase todos os dias', value: 'A' },
+        { text: '⚠️ Algumas vezes por semana', value: 'B' },
+        { text: '😕 Raramente', value: 'C' },
+        { text: '🙂 Nunca', value: 'D' },
       ],
     },
     {

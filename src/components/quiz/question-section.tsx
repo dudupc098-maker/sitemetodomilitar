@@ -43,12 +43,12 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
     }
 
     if (question.id === 'q2') {
-      const parts = text.split(/(depois de deitar\?)/i);
+      const parts = text.split(/(ficando para trás\?)/i);
       return (
         <>
           {parts.map((part, index) => {
             if (!part) return null;
-            if (part.match(/^(depois de deitar\?)$/i)) {
+            if (part.match(/^(ficando para trás\?)$/i)) {
               return <span key={index} className="text-primary">{part}</span>;
             }
             return part;
