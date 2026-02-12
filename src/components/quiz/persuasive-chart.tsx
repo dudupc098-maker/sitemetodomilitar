@@ -28,11 +28,11 @@ const chartConfig = {
 const YouAreHereLabel = (props: any) => {
   const { x, y } = props;
   return (
-    <foreignObject x={x - 28} y={y - 40} width="56" height="24">
+    <foreignObject x={x - 30} y={y - 42} width="60" height="28">
         <div 
             xmlns="http://www.w3.org/1999/xhtml"
             style={{ backgroundColor: '#FF453A', color: 'white' }}
-            className="flex items-center justify-center rounded-md px-2 py-1 text-xs font-bold"
+            className="flex h-full w-full items-center justify-center rounded-lg text-sm font-bold"
         >
             Você
         </div>
