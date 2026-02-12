@@ -57,21 +57,6 @@ export default function QuestionSection({ question, onAnswer }: QuestionSectionP
       );
     }
 
-    if (question.id === 'q3') {
-      const parts = text.split(/(descanso não foi suficiente\?)/i);
-      return (
-        <>
-          {parts.map((part, index) => {
-            if (!part) return null;
-            if (part.match(/^(descanso não foi suficiente\?)$/i)) {
-              return <span key={index} className="text-primary">{part}</span>;
-            }
-            return part;
-          })}
-        </>
-      );
-    }
-
     if (question.id === 'q4') {
       const parts = text.split(/(produtividade, foco ou disposição)/i);
       return (

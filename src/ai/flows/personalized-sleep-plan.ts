@@ -16,7 +16,6 @@ const PersonalizedSleepPlanInputSchema = z.object({
     .string()
     .describe("Response to the question: \"Quando você acorda de manhã, como você sente que está fisicamente e mentalmente?\""),
   q2: z.string().describe("Response to the question: \"Com que frequência seu cansaço faz você sentir que está ficando para trás?\""),
-  q3: z.string().describe("Response to the question: \"Com que frequência você acorda já sentindo que o descanso não foi suficiente?\""),
   q4: z.string().describe("Response to the question: \"O cansaço já fez você perder produtividade, foco ou disposição durante o dia?\""),
   q5: z.string().describe("Response to the question: \"Quantos minutos você leva para pegar no sono?\""),
   q6: z.string().describe("Response to the question: \"Quantas horas você dorme por noite?\""),
@@ -52,7 +51,6 @@ const prompt = ai.definePrompt({
 Quiz Responses:
 Q1: {{{q1}}}
 Q2: {{{q2}}}
-Q3: {{{q3}}}
 Q4: {{{q4}}}
 Q5: {{{q5}}} minutos
 Q6: {{{q6}}} horas

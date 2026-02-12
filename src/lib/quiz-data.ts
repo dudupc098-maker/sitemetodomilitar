@@ -32,7 +32,7 @@ export const quizData: {
   pricing: any;
   guarantees: any[];
 } = {
-  totalQuestions: 10,
+  totalQuestions: 9,
   questions: [
     {
       id: 'q1',
@@ -54,17 +54,6 @@ export const quizData: {
         { text: '⚠️ Algumas vezes por semana', value: 'B' },
         { text: '😕 Raramente', value: 'C' },
         { text: '🙂 Nunca', value: 'D' },
-      ],
-    },
-    {
-      id: 'q3',
-      type: 'multiple-choice',
-      question: 'Com que frequência você acorda já sentindo que o descanso não foi suficiente?',
-      options: [
-        { text: '🙂 Raramente', value: 'A' },
-        { text: '😕 Às vezes', value: 'B' },
-        { text: '😩 Quase todos os dias', value: 'C' },
-        { text: '🥱 Todos os dias', value: 'D' },
       ],
     },
     {
