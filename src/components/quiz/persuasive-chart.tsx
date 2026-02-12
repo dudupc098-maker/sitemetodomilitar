@@ -8,7 +8,6 @@ import {
   YAxis,
   Tooltip,
   ReferenceDot,
-  Label,
 } from 'recharts';
 import { ChartContainer } from '@/components/ui/chart';
 
@@ -23,21 +22,6 @@ const chartConfig = {
   value: {
     label: 'Pontuação',
   },
-};
-
-const YouAreHereLabel = (props: any) => {
-  const { x, y } = props;
-  return (
-    <foreignObject x={x - 30} y={y - 42} width="60" height="28">
-        <div 
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{ backgroundColor: '#FF453A', color: 'white' }}
-            className="flex h-full w-full items-center justify-center rounded-lg text-sm font-bold"
-        >
-            Você
-        </div>
-    </foreignObject>
-  );
 };
 
 export function PersuasiveChart() {
@@ -88,9 +72,7 @@ export function PersuasiveChart() {
             fill="url(#areaGradient)"
           />
            <ReferenceDot x="A" y={20} r={6} fill="white" stroke="#32D74B" strokeWidth={2} />
-           <ReferenceDot x="B" y={50} r={6} fill="#FF453A" stroke="white" strokeWidth={2}>
-             <Label content={<YouAreHereLabel />} />
-           </ReferenceDot>
+           <ReferenceDot x="B" y={50} r={6} fill="#FF453A" stroke="white" strokeWidth={2} />
            <ReferenceDot x="C" y={100} r={6} fill="white" stroke="#FF453A" strokeWidth={2} />
         </AreaChart>
       </ChartContainer>
