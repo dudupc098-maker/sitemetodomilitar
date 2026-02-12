@@ -31,7 +31,8 @@ const YouAreHereLabel = (props: any) => {
     <foreignObject x={x - 28} y={y - 40} width="56" height="24">
         <div 
             xmlns="http://www.w3.org/1999/xhtml"
-            className="flex items-center justify-center rounded-md bg-destructive px-2 py-1 text-xs font-bold text-destructive-foreground"
+            style={{ backgroundColor: '#FF453A', color: 'white' }}
+            className="flex items-center justify-center rounded-md px-2 py-1 text-xs font-bold"
         >
             Você
         </div>
@@ -45,7 +46,8 @@ const ObjectiveLabel = (props: any) => {
       <foreignObject x={x - 30} y={y - 40} width="60" height="24">
           <div 
               xmlns="http://www.w3.org/1999/xhtml"
-              className="flex items-center justify-center rounded-md bg-background px-2 py-1 text-xs font-medium text-foreground shadow-md border"
+              style={{ color: '#1C1C1E' }}
+              className="flex items-center justify-center text-xs font-semibold"
           >
               Objetivo
           </div>
@@ -71,14 +73,14 @@ export function PersuasiveChart() {
         >
           <defs>
               <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#22c55e" />
-                  <stop offset="50%" stopColor="#facc15" />
-                  <stop offset="100%" stopColor="#ef4444" />
+                  <stop offset="0%" stopColor="#32D74B" />
+                  <stop offset="50%" stopColor="#FFD60A" />
+                  <stop offset="100%" stopColor="#FF453A" />
               </linearGradient>
               <linearGradient id="areaGradient" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#22c55e" stopOpacity={0.4} />
-                  <stop offset="50%" stopColor="#facc15" stopOpacity={0.3} />
-                  <stop offset="100%" stopColor="#ef4444" stopOpacity={0.2} />
+                  <stop offset="0%" stopColor="#32D74B" stopOpacity={0.6} />
+                  <stop offset="50%" stopColor="#FFD60A" stopOpacity={0.5} />
+                  <stop offset="100%" stopColor="#FF453A" stopOpacity={0.4} />
               </linearGradient>
           </defs>
           <CartesianGrid vertical={false} strokeDasharray="3 3" />
@@ -97,14 +99,15 @@ export function PersuasiveChart() {
             dataKey="value"
             type="monotone"
             stroke="url(#lineGradient)"
-            strokeWidth={3}
+            strokeWidth={4}
             fillOpacity={1}
             fill="url(#areaGradient)"
           />
-           <ReferenceDot x="B" y={50} r={6} fill="#b91c1c" stroke="white" strokeWidth={2}>
+           <ReferenceDot x="A" y={20} r={6} fill="white" stroke="#32D74B" strokeWidth={2} />
+           <ReferenceDot x="B" y={50} r={6} fill="#FF453A" stroke="white" strokeWidth={2}>
              <Label content={<YouAreHereLabel />} />
            </ReferenceDot>
-           <ReferenceDot x="C" y={100} r={6} fill="white" stroke="#dc2626" strokeWidth={2}>
+           <ReferenceDot x="C" y={100} r={6} fill="white" stroke="#FF453A" strokeWidth={2}>
               <Label content={<ObjectiveLabel />} />
            </ReferenceDot>
         </AreaChart>
