@@ -29,7 +29,6 @@ export default function LoadingSection({ onComplete, answers }: LoadingSectionPr
         q6: answers.q6 || '',
         q7: answers.q7 || '',
         q8: answers.q8 || '',
-        q9: answers.q9 || '',
         q10: answers.q10 || '',
         q11: answers.q11 || '',
       });

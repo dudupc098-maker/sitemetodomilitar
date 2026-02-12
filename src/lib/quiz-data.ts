@@ -32,7 +32,7 @@ export const quizData: {
   pricing: any;
   guarantees: any[];
 } = {
-  totalQuestions: 11,
+  totalQuestions: 10,
   questions: [
     {
       id: 'q1',
@@ -122,17 +122,6 @@ export const quizData: {
         { text: '😡 Irritação / humor ruim', value: 'B' },
         { text: '🧠 Falta de foco', value: 'C' },
         { text: '😴 Cansaço constante', value: 'D' },
-      ],
-    },
-    {
-      id: 'q9',
-      type: 'multiple-choice',
-      question: 'Se nada mudar, como você acha que estará daqui 6 meses?',
-      options: [
-        { text: '😟 Igual ou pior', value: 'A' },
-        { text: '😞 Muito cansado ainda', value: 'B' },
-        { text: '😐 Talvez igual', value: 'C' },
-        { text: '😴 Não quero nem pensar', value: 'D' },
       ],
     },
     {
