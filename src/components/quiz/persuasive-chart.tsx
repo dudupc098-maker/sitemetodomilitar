@@ -40,22 +40,6 @@ const YouAreHereLabel = (props: any) => {
   );
 };
 
-const ObjectiveLabel = (props: any) => {
-    const { x, y } = props;
-    return (
-      <foreignObject x={x - 30} y={y - 40} width="60" height="24">
-          <div 
-              xmlns="http://www.w3.org/1999/xhtml"
-              style={{ color: '#1C1C1E' }}
-              className="flex items-center justify-center text-xs font-semibold"
-          >
-              Objetivo
-          </div>
-      </foreignObject>
-    );
-  };
-
-
 export function PersuasiveChart() {
   return (
     <div className="my-8 flex flex-col items-center">
@@ -107,9 +91,7 @@ export function PersuasiveChart() {
            <ReferenceDot x="B" y={50} r={6} fill="#FF453A" stroke="white" strokeWidth={2}>
              <Label content={<YouAreHereLabel />} />
            </ReferenceDot>
-           <ReferenceDot x="C" y={100} r={6} fill="white" stroke="#FF453A" strokeWidth={2}>
-              <Label content={<ObjectiveLabel />} />
-           </ReferenceDot>
+           <ReferenceDot x="C" y={100} r={6} fill="white" stroke="#FF453A" strokeWidth={2} />
         </AreaChart>
       </ChartContainer>
       </div>
