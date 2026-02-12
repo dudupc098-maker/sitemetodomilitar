@@ -3,7 +3,6 @@
 import type { PersonalizedSleepPlanOutput } from '@/ai/flows/personalized-sleep-plan';
 import { Card } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
-import { PersuasiveChart } from './persuasive-chart';
 
 type ResultsSectionProps = {
   plan: PersonalizedSleepPlanOutput;
@@ -31,8 +30,6 @@ export default function ResultsSection({ plan, answers }: ResultsSectionProps) {
         <p className="mx-auto mt-4 max-w-3xl text-base text-[#505D6A] md:text-lg">
           Suas respostas mostram dificuldade para dormir à noite. Por isso, selecionamos o <span className="font-semibold text-primary">Método Sono Militar</span> para fazer você dormir rápido e acordar realmente descansado.
         </p>
-
-        <PersuasiveChart />
         
         <div className="mt-8">
           <Card className="mx-auto max-w-2xl transform rounded-xl border-border/50 bg-white p-4 text-left shadow-[0_8px_24px_rgba(2,6,23,0.06)] transition-all duration-200 hover:translate-y-[-4px] hover:shadow-lg md:p-6">
