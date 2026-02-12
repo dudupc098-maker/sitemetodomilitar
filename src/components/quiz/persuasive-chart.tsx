@@ -57,7 +57,6 @@ const ObjectiveLabel = (props: any) => {
 export function PersuasiveChart() {
   return (
     <div className="my-8 flex flex-col items-center">
-      <h3 className="text-lg font-semibold text-foreground mb-1">Você está no caminho certo.</h3>
       <div className="w-full max-w-lg h-56">
       <ChartContainer config={chartConfig} className="w-full h-full">
         <AreaChart
