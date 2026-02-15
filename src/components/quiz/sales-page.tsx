@@ -3,7 +3,7 @@
 import { trackEvent } from '@/lib/analytics';
 import { useEffect } from 'react';
 import { Button } from '../ui/button';
-import { Info } from 'lucide-react';
+import { Info, ArrowDownCircle } from 'lucide-react';
 import WhatYouGetSection from './what-you-get-section';
 import BonusSection from './bonus-section';
 import BeforeAfterSection from './before-after-section';
@@ -31,6 +31,14 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
       
       <div className="bg-background">
         <div className="container mx-auto w-full max-w-[420px] px-4 py-10 md:py-16">
+          <div className="mb-8 text-center">
+            <h2 className="font-headline text-2xl font-bold text-foreground md:text-3xl">
+              É por isso que você não dorme
+            </h2>
+            <div className="mt-4 flex justify-center">
+              <ArrowDownCircle className="h-10 w-10 animate-bounce text-primary" />
+            </div>
+          </div>
           <div className="aspect-[9/16] overflow-hidden rounded-lg shadow-xl">
             <iframe
               className="h-full w-full"
