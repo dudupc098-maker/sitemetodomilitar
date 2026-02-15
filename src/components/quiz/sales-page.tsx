@@ -34,7 +34,7 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
           <div className="aspect-[9/16] overflow-hidden rounded-lg shadow-xl">
             <iframe
               className="h-full w-full"
-              src="https://www.youtube.com/embed/cKIII-H8FQo?rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/V_5YvPwIBdg?rel=0&modestbranding=1"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
