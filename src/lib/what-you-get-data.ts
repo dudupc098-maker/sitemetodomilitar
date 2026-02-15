@@ -11,7 +11,7 @@ export const whatYouGetData: WhatYouGetItem[] = [
     title: 'Diagnóstico personalizado do seu sono',
   },
   {
-    title: 'Área de membros premium estilo Netflix',
+    title: 'Área de conteúdos exclusivos',
   },
   {
     title: '15 aulas gravadas em vídeo',
