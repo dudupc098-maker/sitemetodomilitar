@@ -30,8 +30,8 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
       <ResultsSection plan={plan} answers={answers} />
       
       <div className="bg-background">
-        <div className="container mx-auto max-w-[800px] px-4 py-10 md:py-16">
-          <div className="aspect-video overflow-hidden rounded-lg shadow-xl">
+        <div className="container mx-auto w-full max-w-[420px] px-4 py-10 md:py-16">
+          <div className="aspect-[9/16] overflow-hidden rounded-lg shadow-xl">
             <iframe
               className="h-full w-full"
               src="https://www.youtube.com/embed/cKIII-H8FQo?rel=0&modestbranding=1"
