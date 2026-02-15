@@ -28,8 +28,22 @@ export default function SalesPage({ plan, answers }: SalesPageProps) {
   return (
     <div className="relative">
       <ResultsSection plan={plan} answers={answers} />
+      
       <div className="bg-background">
-        <div className="container mx-auto max-w-5xl space-y-16 px-4 py-8 md:space-y-24 md:py-16">
+        <div className="container mx-auto max-w-[800px] px-4 py-10 md:py-16">
+          <div className="aspect-video overflow-hidden rounded-lg shadow-xl">
+            <iframe
+              className="h-full w-full"
+              src="https://www.youtube.com/embed/cKIII-H8FQo?rel=0&modestbranding=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+        
+        <div className="container mx-auto max-w-5xl space-y-16 px-4 pb-8 pt-0 md:space-y-24 md:pb-16">
             <BeforeAfterSection />
             <MicroReinforcementSection />
             <WhatYouGetSection />
