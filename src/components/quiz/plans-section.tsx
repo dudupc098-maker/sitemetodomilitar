@@ -11,7 +11,7 @@ export default function PlansSection() {
 
     const handleCtaClick = () => {
         trackEvent('purchase_completed', { price: plan.price });
-        window.location.href = 'https://pay.cakto.com.br/3cay6bo_559317';
+        window.location.href = 'https://pay.cakto.com.br/zy8tfwj_768031';
     }
 
   return (
