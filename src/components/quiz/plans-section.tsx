@@ -10,9 +10,21 @@ export default function PlansSection() {
     const plan = quizData.pricing.main;
 
     const handleCtaClick = () => {
-        trackEvent('purchase_completed', { price: plan.price });
-        window.location.href = 'https://pay.cakto.com.br/zy8tfwj_768031';
-    }
+        
+   if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
+  (window as any).fbq("track", "InitiateCheckout", {
+    value: plan.price,
+    currency: "BRL",
+  });
+}
+
+
+    // redireciona pro checkout
+    setTimeout(() => {
+  window.location.href = 'https://pay.cakto.com.br/zy8tfwj_768031';
+}, 150);
+
+}
 
   return (
     <section id="pricing" className="w-full scroll-mt-24 animate-fade-in-up py-16 bg-background">
