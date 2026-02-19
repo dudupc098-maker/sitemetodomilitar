@@ -10,23 +10,26 @@ export default function PlansSection() {
     const plan = quizData.pricing.main;
 
     const handleCtaClick = () => {
-        
-   if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
-  (window as any).fbq("track", "InitiateCheckout", {
-    value: plan.price,
-    currency: "BRL",
-  });
-}
+  // pega as UTMs do quiz (ex: ?utm_source=...&utm_campaign=...)
+  const params = typeof window !== "undefined" ? window.location.search : "";
 
+  // evento Meta (opcional, mas ok)
+  if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
+    (window as any).fbq("track", "InitiateCheckout", {
+      value: plan.price,
+      currency: "BRL",
+    });
+  }
 
-    // redireciona pro checkout
-    setTimeout(() => {
-  const params = window.location.search;
-window.location.href = `https://pay.cakto.com.br/zy8tfwj_768031${params}`;
+  // (se você quiser manter o seu trackEvent interno, pode deixar)
+  // trackEvent('purchase_completed', { price: plan.price });
 
-}, 150);
+  // redireciona pro checkout levando as UTMs junto
+  setTimeout(() => {
+    window.location.href = `https://pay.cakto.com.br/zy8tfwj_768031${params}`;
+  }, 150);
+};
 
-}
 
   return (
     <section id="pricing" className="w-full scroll-mt-24 animate-fade-in-up py-16 bg-background">
