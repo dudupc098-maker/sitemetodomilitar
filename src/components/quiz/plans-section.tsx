@@ -21,7 +21,9 @@ export default function PlansSection() {
 
     // redireciona pro checkout
     setTimeout(() => {
-  window.location.href = 'https://pay.cakto.com.br/zy8tfwj_768031';
+  const params = window.location.search;
+window.location.href = `https://pay.cakto.com.br/zy8tfwj_768031${params}`;
+
 }, 150);
 
 }
