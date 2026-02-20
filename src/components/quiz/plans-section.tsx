@@ -1,44 +1,40 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-
-import { Button } from '@/components/ui/button';
-import { quizData } from '@/lib/quiz-data';
-import { bonusData } from '@/lib/bonus-data';
-import { Check, Gift } from 'lucide-react';
-
-// se você usa esse trackEvent em outro lugar, pode manter o import.
-// aqui eu deixei, mas não estou chamando (pra não confundir)
-import { trackEvent } from '@/lib/analytics';
-
-import { saveUTMs, getUTMs } from "@/lib/utm";
+import { Button } from "@/components/ui/button";
+import { quizData } from "@/lib/quiz-data";
+import { bonusData } from "@/lib/bonus-data";
+import { Check, Gift } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
+import { getUTMs } from "@/lib/utm";
 
 export default function PlansSection() {
   const plan = quizData.pricing.main;
 
-  // ✅ salva UTMs assim que essa página carregar (se houver ?utm_... na URL)
-  useEffect(() => {
-    saveUTMs();
-  }, []);
-
   const handleCtaClick = () => {
-    // ✅ pega UTMs do localStorage (funciona mesmo se a URL estiver /page3 sem ?utm)
-    const params = getUTMs(); // deve vir tipo "?utm_source=...&utm_campaign=..."
+    // 1) pega UTMs salvas (ex: ?utm_source=...&utm_campaign=...)
+    let params = getUTMs();
 
-    // ✅ Meta Pixel - InitiateCheckout
-    if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
-      (window as any).fbq('track', 'InitiateCheckout', {
-        value: Number(plan.price),
-        currency: 'BRL',
+    // fallback: se não tiver salvo ainda, tenta pegar da URL atual
+    if (!params && typeof window !== "undefined") {
+      params = window.location.search || "";
+    }
+
+    // 2) evento Meta (InitiateCheckout)
+    if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
+      (window as any).fbq("track", "InitiateCheckout", {
+        value: plan.price,
+        currency: "BRL",
       });
     }
 
-    // (opcional) evento interno seu — deixe comentado se não precisar
-    // trackEvent('purchase_completed', { price: Number(plan.price) });
+    // (opcional) seu evento interno
+    // trackEvent("initiate_checkout", { price: plan.price });
+    // ou, se você não quiser nada interno, pode remover essa linha:
+    trackEvent("initiate_checkout", { price: plan.price });
 
-    // ✅ redireciona pro checkout levando as UTMs junto
+    // 3) redireciona para o checkout levando as UTMs junto
     setTimeout(() => {
-      window.location.href = `https://pay.cakto.com.br/zy8tfwj_768031${params || ''}`;
+      window.location.href = `https://pay.cakto.com.br/zy8tfwj_768031${params}`;
     }, 150);
   };
 
@@ -49,12 +45,14 @@ export default function PlansSection() {
           <div className="inline-block rounded-md bg-yellow-400 px-3 py-1 text-sm font-bold uppercase text-black tracking-wider">
             Método
           </div>
-          <h2 className="mt-2 font-bold text-4xl sm:text-5xl tracking-tight">SONO MILITAR</h2>
+          <h2 className="mt-2 font-bold text-4xl sm:text-5xl tracking-tight">
+            SONO MILITAR
+          </h2>
         </div>
 
         <ul className="mt-10 space-y-4 text-left text-lg">
           {plan.features
-            .filter((feature) => !feature.toLowerCase().includes('bônus'))
+            .filter((feature) => !feature.toLowerCase().includes("bônus"))
             .map((feature, i) => (
               <li key={i} className="flex items-center gap-4">
                 <Check className="h-7 w-7 shrink-0 text-green-500" />
@@ -80,10 +78,16 @@ export default function PlansSection() {
 
         <div className="mt-12 text-center">
           <div className="inline-block rounded-lg bg-red-600 px-6 py-2">
-            <span className="text-xl font-medium line-through">De R${plan.originalPrice}</span>
+            <span className="text-xl font-medium line-through">
+              De R${plan.originalPrice}
+            </span>
           </div>
+
           <p className="mt-6 text-lg text-gray-300">Por apenas</p>
-          <p className="mt-4 text-6xl font-bold tracking-tighter text-[#22c55e]">R${plan.price}</p>
+
+          <p className="mt-4 text-6xl font-bold tracking-tighter text-[#22c55e]">
+            R${plan.price}
+          </p>
         </div>
 
         <p className="mt-4 text-center font-bold text-white">SOMENTE HOJE!</p>
