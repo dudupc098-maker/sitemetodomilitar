@@ -2,8 +2,10 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 import Script from "next/script";
-
+import { useEffect } from "react";
+import { saveUTMs } from "@/lib/utm";
 export const metadata: Metadata = {
+ 
   title: 'Método Sono Militar',
   description: 'Descubra o método militar que faz você dormir em 2 minutos.',
 };
@@ -13,6 +15,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  useEffect(() => {
+  saveUTMs();
+}, []);
+  
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <head>
