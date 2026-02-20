@@ -11,7 +11,7 @@ import { Check, Gift } from 'lucide-react';
 // aqui eu deixei, mas não estou chamando (pra não confundir)
 import { trackEvent } from '@/lib/analytics';
 
-import { saveUTMs, getUTMs } from '@/biblioteca/utm';
+import { saveUTMs, getUTMs } from "@/lib/utm";
 
 export default function PlansSection() {
   const plan = quizData.pricing.main;
